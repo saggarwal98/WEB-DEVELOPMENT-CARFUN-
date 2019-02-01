@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-widthx, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Hyundai Creta</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="style.css">
+      <style>
+           #carouselExampleIndicators{
+               height:500px;
+               width:1000px;
+               /* background-color: black; */
+           }
+           body{
+               margin-left:20px;
+           }
+           .cont1{
+            display:flex;
+                justify-content: space-evenly;
+                height:220px;
+           }
+           .cont2{
+            display:flex;
+                justify-content: space-evenly;
+                height:300px;
+           }
+           .cont{
+                display:flex;
+                justify-content: space-evenly;
+                height:270px; 
+           }
+           .item1{
+               height:200px;
+               width:600px;
+           }
+           .item2{
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item3{
+               margin-top:60px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item4{
+               margin-top:20px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item5{
+               margin-top:80px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+       </style> 
+    </head>
+<body>
+    
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+                         
+        
+                      </nav>
+                    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="creta2.jpg" alt="First slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="creta3.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="creta4.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+        <br>
+
+
+
+        <center><p class="h1">HYUNDAI CRETA</p></center>
+        <!-- <center><img src="Q43.png" height=50px></center> -->
+
+
+        <p style="margin-left:370px;margin-right:260px;">A HARMONY 
+            BETWEEN THE VISIBLE AND INVISIBLE</p>
+            <center>A stylish exterior design lets the inner beauty shine through.
+Experience a new driving sensation.</center><br>
+            
+        <b><font size=5>REVIEW<br></font></b><br>
+
+
+        <div class="cont1">
+                <div class="item1">
+                    <!-- <p><b>The 2018 BMW M5 is equal parts performance monster and luxury cruiser.</b></p><br> -->
+                    The Creta has been a dream for Hyundai and car buyers alike. It hit the sweet spot for most - someone who was upgrading from a hatchback, someone who was sick of a low-slung sedan, and also someone who needed a fuss-free loaded second car in the house. The concoction was just what the doctor ordered. However, hot new competition meant the Creta had to be on its toes, and find ways to become even more desirable.2018 Creta Facelift has arrived in India. And we got our hands on the New Hyundai Creta and got to spend some quality time behind the wheel. We must say, Hyundai has worked really hard to upgrade the Creta to rival the likes of Jeep Compass, Tata Hexa and the two Renault's- Captur and Duster in the market. Hyundai India heard the feedback of its audience and has given the 2018 Creta facelift some valuable changes visually. Both the exterior and the interior has received contemporary changes and once again, Hyundai India has done what it does the best. Set a trend with the 2018 Creta Facelift.
+                </div>
+                <div class="item4">
+                    <img src="creta.jpg" style="width:450px">
+                </div>
+            </div><br><br><br><br><br><br>
+            <font size=4><center><u><b>Styling<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The 2018 BMW M5 balances a handsome exterior with sporty and elegant interior.</p></b> -->
+                            The new 2018 Hyundai Creta will remind of your high-school batchmate who always had good height and a healthy body and all of sudden went to the gym and completely transformed his body and added more muscle to enhance his macho looks.  It’s the face of the new Hyundai Creta that gets most changes and the chrome on the front grille has now disappeared. It has now replaced by the Hyundai’s signature cascade grille that makes the Creta more aligned to its family design. The front grille along with more muscle on the front bumper makes the new Hyundai Creta look very aggressive and the fog lamp unit on the top-variants also gets a new housing. In addition, the headlamp cluster now gets bi-focal projector headlamps with DRLs that add to the already premium-looking design.
+                            <br>The other big highlight on the new Hyundai Creta is the dual-tone colour scheme on the A-pillar finished in gloss black. Overall, the dimensions of 2018 Hyundai Creta remains unchanged but the front and rear bumpers get grey skid plates that add a bit of ruggedness to the character of the Creta.
+                        </div>
+                    <div class="item3">
+                        <img src="creta7.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br><br><br>
+            <font size=4><center><u><b>Performance<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The multi-talented 2018 BMW M5 is lightning quick and track-ready when performance calls, but comfortable when it’s time to cruise.</p></b> -->
+                            The new Hyundai Creta is being offered in 1.6L petrol, 1.4L diesel and 1.6L diesel engine options.
+                            The power delivery is linear and the gearbox is very responsive, the diesel engine is powerful enough for a quick overtake and the steering too is precise. The 1.6L diesel engine churns out about 126 hp and about 260 NM of torque and performs well on high speed. The suspension on the rough roads is decent, however,  it will occasionally wake up the rear sleeping passenger.
+                            <br>The clutch is light too but the long travel means that you will regret driving in traffic conditions. But the strong mid-range of the engine makes all the difference on the highway and we're certain that given some more time behind the wheel of this one, we'll have a better perspective of things. There's no difference in the way it rides; as it easily soaks in any of the bumps, on the road. Hyundai also mentions that the fuel economy figures, on the petrol, have gone up, by 3 per cent and 4 per cent, on the diesel.
+                        </div>
+                    <div class="item4">
+                        <img src="creta11.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br><br>
+            <font size=4><center><u><b>Comfort & Quality<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>With the room of the standard 5-Series and the sporty touches and additional quality of the M lineup, the 2018 BMW M5’s cabin is one fine place to spend some time.</p></b> -->
+                            Inside the cabin, the new 2018 Hyundai Creta gets minor upgrades, the biggest one being the addition of an electrically operated sunroof. This is for the first time that Hyundai Creta gets the addition of sunroof but it's not panoramic. The dashboard is finished in black and grey and the touchscreen infotainment is located centrally. It is within the reach of the driver and offers a good response to the touch. It also supports Apple Car Play, Android Auto and Mirror link and comes with in-built navigation. The steering mounted control makes the operations easier. There are also a lot of storage spaces on this SUV with each door getting a bottle holder, cupholders both on front and rear. Although the glove box compartment doesn't support cooling features the overall use of plastic on the Creta will impress the buyer in this segment.The height of the Hyundai Creta further adds to give more sense of space inside the cabin and the second-row seats get enough leg and headroom for a comfortable drive. 
+                        </div>
+                    <div class="item4">
+                        <img src="creta9.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br><br>       
+            <font size=4><center><u><b>Safety<br><br></b></u></center></font>
+            <div class="cont">
+                    <div class="item1">
+                            <!-- <b><p>The M5 has no crash-test scores, but a sturdy structure and a healthy set of safety features should make one of the safer cars with 600 horsepower.</p></b> -->
+                            Rear parking assist system with rear view camera display on AVN and steering adaptive guidelines to help park in tight conditions.<br>
+                            Follow Me Headlamp allows the headlamp to be in ON condition for limited time after the car is locked, to illuminate your path in dark condition and assist you to safely reach your doorstep.
+                            <br>Six airbag reveal Hyundai's uncompromising approach to safety engineering. Dual front airbags, front seat side- impact and side curtain airbags work together with the seatbelts and the available pre-tensioning system to take the safety of the vehicle to an un parallel level.
+                            <br>The ABS with Electronic Braking force Distribution (EBD) prevents wheel lockup during panic braking and ensures stable braking.Vehicle stability management (VSM) enhances the directional stability of the vehicle by automatically controlling Motor driven power-steering (MDPS) and brakes on each wheel. In case of braking on a non-homogeneous surface, it helps to stabilize the vehicle and maintain the vehicle path.
+                        </div>
+                    <div class="item2">
+                        <img src="creta10.png"  style="width:450px">
+                    </div>
+            </div><br><br><br><br><br>  
+            <font size=4><center><u><b>Features<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>BMW loads the M5 with luxury and performance features and makes more of both available.</p></b> -->
+                            The big features, however, are the ones that most people have been waiting for. At the top end, there's a sunroof, cruise control, a touchscreen infotainment system, which comes with Apple Carplay and Android Auto, Navigation, not to forget, wireless phone charging, which is also a segment first. Then there's a wearable device, on offer, too; something that we've already seen on the Nexon. It's available with the top-spec variant of the Hyundai Creta facelift and we've seen these wearable devices becoming a big part of the automotive world. It keeps the owners engaged with their car. It gives you a whole bunch of information and also tells you how much you've walked, throughout the day. The smart band will also let you go keyless, for the car's operation, of course. Hyundai says that there are no less than 13 additional features, on the Creta, and most of them connect customers, to their cars.
+                        </div>
+                    <div class="item4">
+                        <img src="creta8.jpg"  style="width:450px">
+                    </div>
+            </div><br><br>
+            <font size=4><center><u><b>Fuel Economy<br><br></b></u></center></font>
+            <div class="cont1">
+                    <div class="item1">
+                            <!-- <b><p>Who worries about fuel economy with 600 horsepower under the hood?</p></b> -->
+                            The sloping roof profile reduces forward air flow resistance and rear spoiler effect for improved fuel economy and driving stability.
+                            As per ARAI, the mileage of Hyundai Creta Manual Transmission Petrol Variant is 16 kmpl, for Diesel Variant is 22 kmpl. Automatic Transmission Diesel Variant is 22 kmpl and for Petrol Variant is 16 kmpl. To add some context to those numbers, it wasn't as efficient compared to the Captur (15.50kmpl) inside the city, and nowhere close to the S-Cross' near unbelievable 19.16kmpl. Out on the highway, though, it bettered both, the Renault (21.1kmpl), and the Maruti (20.65kmpl) albeit by a tiny margin. 
+                        </div>
+                    <div class="item4">
+                        <img src="creta12.jpg"  style="width:400px;margin-left:30px">
+                    </div>
+            </div>  
+    </div>
+    <br>
+    <br>
+    
+
+
+
+    <div class="container-fluid bg-grey" style="height: 300px">
+            <br>
+            <br>
+            
+             <p>
+            
+                          <div class="row">
+                        <div class="col-sm-4">
+                          
+                        <h6><b>Overview</b></h6>
+                                                
+                        <a href="/aboutus" style="color: black">
+                        About Us
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        FAQs
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Privacy Policy
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Terms And Conditions
+                      </a>
+              </p>
+            </div>
+                    
+            <div class="col-sm-4">
+                    <h6><b>Used Cars By Places</b></h6>
+                    <a href="/usedcarsindelhi" style="color: black">
+                      Delhi
+                    </a>
+                    <br>
+                    <a href="/usedcarsinmumbai" style="color: black">
+                     Mumbai
+                      </a>
+                      <br>
+                      <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                        </a>
+                        <br>
+                        <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                          </a>
+                          <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6><b>Follow Us On</b></h6>
+                        <a href="#" style="color: black">
+                            <p>
+                                <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                                <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                            <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                        </p>
+                          
+                    </a>
+                        <br>
+                        
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;<b> @2018copyright carfun</b>
+         </div>
+        
+</body>
+</html>
+</body>

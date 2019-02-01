@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          
+
+                <a class="navbar-brand" href="#">Logo</a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      New Cars
+                    </a>
+                    <div class="dropdown-menu s7">
+                      
+                      <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                      <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Reviews
+                        </a>
+                        <div class="dropdown-menu s7">
+                          <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                          <a class="dropdown-item" href="/videos">Videos</a>
+                          <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Specials
+                            </a>
+                            <div class="dropdown-menu s7">
+                              <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                              <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                              
+                            </div>
+                            
+                          </li>
+
+                        
+
+
+
+
+
+                          <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Brand
+                            </a>
+                            <div class="dropdown-menu s7">
+                              <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                              <a class="dropdown-item" href="/3">Hyundai</a>
+                              <a class="dropdown-item" href="/brands/honda">Honda</a>
+                              <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                              <a class="dropdown-item" href="/brands/ford">Ford</a>
+                              <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                              
+                            </div>
+                            
+                          </li>
+
+
+
+
+                          <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Used Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                                                                  
+                                <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                             
+                              <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                          
+
+                              
+                            </div>
+                            
+                          </li>
+
+                         
+                          
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                
+
+                        
+                          
+
+                          
+
+
+                          
+                          
+                </ul> 
+
+
+                
+                
+               
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form class="form-inline" action="/login">
+                   
+                    <button class="btn btn-success search" type="submit">Login</button>
+                  </form>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <form class="form-inline" action="/signup">
+                   
+                    <button class="btn btn-success search" type="submit">Signup</button>
+                  </form>
+
+
+              </nav>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+<h1>
+    PRIVACY POLICY
+</h1>
+
+<p>
+        Girnar Software Private Limited and its affiliates, subsidiaries & associate companies as mentioned in this Privacy Policy (hereinafter referred individually and/ or collectively as “Girnar”) is/are concerned about the privacy of the data and information of the users accessing, offering, selling or purchasing products or services on any of Girnar websites, mobile sites or mobile applications thereof accessible through various internet enabled smart devices (individually and collectively referred to as “Platform”) or otherwise doing business with Girnar. This Privacy Policy applies to Girnar which includes all its affiliates, subsidiaries & associate companies and help you understand how we collect, use, store, process, transfer, share, and otherwise deal with and protect all your information when you visit any of our Platform and use our products and services or even otherwise visit the Platform.
+        THIS PRIVACY POLICY IS AN ELECTRONIC RECORD IN THE FORM OF ELECTRONIC CONTRACT IN TERMS OF INDIAN INFORMATION TECHNOLOGY ACT, 2000 AND RULES MADE THEREUNDER (AS AMENDED FROM TIME TO TIME) AND DOES NOT REQUIRE ANY PHYSICAL SIGNATURE OR SEAL.
+        The term “We”/ “Us” / “Our” used in this document refer to Girnar and "You" / "Your" /"Yourself" refer to the users, who visit or access or use (collectively“usage”) Platform.
+        
+        TERMS AND CONDITIONS:
+        
+        
+        Acknowledgment:
+        
+        PLEASE READ THIS PRIVACY POLICY CAREFULLY. YOU INDICATE THAT YOU UNDERSTAND, AGREE AND CONSENT TO THIS PRIVACY POLICY. HENCE BY VISITING OUR PLATFORM OR BY USING / AVAILING ANY OF OUR SERVICE OR PRODUCT, YOU HEREBY GIVE YOUR UNCONDITIONAL CONSENT OR AGREEMENT TO GIRNAR AS PROVIDED UNDER SECTION 43A AND SECTION 72A OF INDIAN INFORMATION TECHNOLOGY ACT, 2000 FOR COLLECTION, USE, STORAGE, PROCESSING, SHARING AND TRANSFER AND DISCLOSURE OF YOUR INFORMATION.
+        YOU ACKNOWLEDGE THAT YOU HAVE ALL LEGAL RIGHTS AND LAWFUL AUTHORITY TO SHARE THE INFORMATION WITH US AND FURTHER ACKNOWLEDGE THAT BY COLLECTING, SHARING, PROCESSING AND TRANSFERRING INFORMATION PROVIDED BY YOU, SHALL NOT CAUSE ANY LOSS OR WRONFUL GAIN TO YOU OR ANY OTHER PERSON.
+        IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS / USE OUR PLATFORM OR AVAIL ANY OF OUR SERVICE OR PRODUCT ON OUR PLATFORM.
+        
+        Topics Covered:
+        
+        This policy is designed to make you understand:
+        i. The type of information which You share with Us or which We collect during Your usage of our Platform or availing any Product or Services from Our Platform. 
+        ii. The purpose of collection, storage, processing and transferring of Your Information by Us. 
+        iii. Security measures implemented by Us to protect Your Information as mandated by law. 
+        iv. Disclosure, sharing and transfer of Your personal information by Us and purpose of such disclosure, sharing or transfer. 
+        
+        Controller of Personal Information
+        
+        Girnar will be the controller of Your Personal Information provided by You or otherwise collected by Us. Your data controller is responsible for the collection, use, disclosure, retention, and protection of your Personal Information in accordance with its privacy standards as well as any applicable laws.
+        
+        Information We Collect (Your Information):
+        
+        We collect Your information during Your usage of Platform or when You avail any of products or services available on or through Platform, either as a registered user or otherwise when you visit any other website pages or other mobile applications
+        The information collected may consist of:
+        1) Your Personal Information: 
+        Your full name, age, address, email id, phone number, date of birth, gender, financial information, any other sensitive personal data or information etc. We collect Your Personal Information when You create an account at Our Platform or fill out a form or respond to a survey.
+        2) Your Non-Personal information: 
+        a) Usage : How You use Our Platform, such as the types of content that you view or engage with, the features You use, Your searches & results, Your browsing information, the actions You take and the time, frequency and duration of your activities.
+        b) Device Information: Information about the computer, mobile, laptop, tablet or any other internet enabled electronic device (‘Device”) You use to access the Platform. This may include real-time information about the geographic location of Your Device as permitted by You, internet connection, Your IP address, operating systems, platforms, browsing information, Device type, Device ID, network information, metadata and other information associated with other files stored on Your Device, last URL visited, your website search history. 
+        c) Preference: Your preferences and setting such as geographical location, time zone and language.
+        d) Information from third parties: We may collect, process and store Your user ID associated with any social media account (such as your Facebook and Google account) that You use to sign into the Platform or connect with or use with the products or services. When You sign in to Your account with Your social media account information, or otherwise connect to Your social media account with the Product or Services, You consent to Our collection, storage, and use, in accordance with this Privacy Policy, of the information that You make available to Us through the social media interface. This could include, without limitation, any information that You have made public through Your social media account, information that the social media service shares with Us, or information that is disclosed during the sign-in process. Please see Your social media provider's privacy policy and help center for more information about how they share information when You choose to connect Your account. 
+        We may also obtain information about You from third parties such as partners, marketers, third-party websites and researchers and combine that information with information which We collect from or about You.
+        We may use third-party service providers to serve ads on Girnar’s behalf across the internet and sometimes on the Platform. They may collect information about Your visits to the Platform, and Your interaction with the products and services on the Platform.
+        e) Cookies and other Electronic Tools: We may use cookies, pixel tags, web beacons, mobile device IDs, “flash cookies” and similar files or technologies to collect and store information in respect to Your use of the Platform1. You can erase or choose to disable/block these cookies through Your Device/browser settings. You can configure Your browser to alert You when we attempt to send You a cookie with an option to accept or refuse the cookie. If You have turned cookies off, You may be prevented from using certain features of the Platform and this may interfere with certain functionality of the Platform.
+        
+        Manner of storage of Your Information
+        
+        Your Information will mostly be stored in electronic form however certain data may be stored in physical form. We may store, collect, use and process Your Information within Republic of India and/or outside India subject to compliance under applicable laws. We may enter into agreements with third parties (in or outside of India) to store or process Your Information and such third parties may have their own security measures to safeguard Your Information which security standards as comparable with good industry practices.
+        
+        Purpose of Collection, Storage, Processing of Your Information: 
+        
+        Girnar collect Your Information solely for the purpose of providing you the products or services that is connected with the function or activity of the Girnar which includes but not limited to the following (“Purpose”):
+        To inform You about various products and services offered on Our Platform and provide customer support to You. 
+        To address Your queries and resolve your concerns pertaining to any product or service that You were looking for. 
+        To send You survey and marketing communications or facilitate various programmes and initiatives launched either by Us or third party which We believe may be of interest to You. 
+        To facilitate Your usage of Platform (what features You like, how You use the, etc.) and improve Our products or services, or any other content on the Platform (such as by personalizing content to your interests), process and complete your transactions, and make special offers. 
+        To review Platform performance, diagnose technical problems and do data analysis to make Your experience better. 
+        To protect the integrity of Our Platform. 
+        To inform You about change in any term and condition of this Privacy Policy or Terms of Use of any Platform of Girnar. 
+        To implement information security practices, to determine any security breaches, contaminant or computer virus, to investigate/prevent/take action against illegal activities and suspected fraud. 
+        To keep You informed about news, events and ideas regarding Your preferences and help You to improve Your knowledge and skills about the preferred content. 
+        To carry out Our obligations and enforce Our rights arising from any contracts entered into between You and Us. 
+        To allow You to participate in interactive features offered through Our Platform. 
+        To contact You about Our own and third-party products and services that may be of interest to You. If You do not want Us to use Your Information in this way, please check the relevant box located on the form on which We collect Your data and/or adjust Your user preferences in Your account profile. 
+        To produce and share aggregate insights and statistics that do not identify You. 
+        To enable Us independently or in association with third party to show You tailored ads that are relevant to You. 
+        To enable Us to display advertisements to our advertisers'/service providers' target audiences. Even though We do not disclose Your Personal Information for these purposes without Your consent, if You click on or otherwise interact with an advertisement, the advertiser may assume that You meet its target criteria. 
+        To help advertisers and other partners measure the effectiveness and distribution of their ads and services, and understand the types of people who use their services and how people interact with their websites, apps and services. 
+        In any other way We may describe when You provide the Information. 
+        For any other purpose with Your consent. 
+        To opt-out from Colombia tracking, click here.
+        ifYou want to opt-out of Google Analytics tracking, click here.
+        
+        Sharing, Transfer or Disclosure of Your Information:
+        
+        1) Any service or product provided through Our Platform may be provided either by Girnar or its vendor, dealer, OEM, channel partners and other third parties (“Other Entities”) which are registered with Girnar to render the services or provide products through Platform or otherwise. You acknowledge and agree that Girnar may share, disclose, transfer or part with Your Information to Other Entities depending upon the type of Product or Service You are looking for or for one or more of the permissible purposes. Girnar may also share Your Personal or Non-Personal information where it is required to share the same with such Other Entities for providing you the product or service and You provide Girnar, Your unconditional consent to do the same. 
+        2) Girnar may share statistical data and/or other Non-personal Information or details to facilitate various program or initiatives launched by Girnar, third party service providers, partners or financial institutions, from time to time 
+        3) We use other third parties such as a credit/debit card processing company, payment gateway, pre-paid cards etc. to enable You to make payments for buying products or availing services on Platform. When You sign up for these services, You may have the ability to save Your card details for future reference and faster future payments. In such case, We may share Your relevant Information as necessary for the third parties to provide such services, including your name, residence and email address. The processing of payments or authorization is solely in accordance with these third parties policies, terms and conditions and we are not in any manner responsible or liable to You or any third party for any delay or failure at their end in processing the payments. 
+        4) In addition to this, Girnar reserve the right to share Your Information with any Government Agency or other authorized law enforcement agencies (LEAs) mandated under law to obtain Your Information for the purpose of verification of identity or for prevention, detection, investigation including but not limited to cyber incidents, prosecution, and punishment of offences etc. 
+        5) We may process Your Information outside India ad relay on legally provided mechanisms to lawfully transfer Your Information across borders. 
+        6) We may share Your Information in any other circumstances where We have Your consent. 
+</p>
+</div>
+
+
+
+
+            
+
+            <div class="container-fluid bg-grey" style="height: 300px">
+                    <br>
+                    <br>
+                    
+                     <p>
+                    
+                                  <div class="row">
+                                <div class="col-sm-4">
+                                  
+                                <h6><b>Overview</b></h6>
+                                                        
+                                <a href="/aboutus" style="color: black">
+                                About Us
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                FAQs
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                Privacy Policy
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                Terms And Conditions
+                              </a>
+                      </p>
+                    </div>
+                            
+                    <div class="col-sm-4">
+                            <h6><b>Used Cars By Places</b></h6>
+                            <a href="/usedcarsindelhi" style="color: black">
+                              Delhi
+                            </a>
+                            <br>
+                            <a href="/usedcarsinmumbai" style="color: black">
+                             Mumbai
+                              </a>
+                              <br>
+                              <a href="/usedcarsinbangalore" style="color: black">
+        Bangalore
+                                </a>
+                                <br>
+                                <a href="/usedcarsinhyderabad" style="color: black">
+        Hyderabad
+                                  </a>
+                                  <br>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6><b>Follow Us On</b></h6>
+                                <a href="#" style="color: black">
+                                    <p>
+                                        <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                          
+                                       
+                                </a>
+                                <a href="#" style="color: black">
+                                  
+                                        <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                          
+                                       
+                                </a>
+                                <a href="#" style="color: black">
+                                  
+                                    <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                </p>
+                                  
+                            </a>
+                                <br>
+                                
+                                </div>
+                          </div>
+                          <br>
+                          <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;<b> @2018copyright carfun</b>
+                 </div>
+                
+        </body>
+        </html>
+</body>
+</html>

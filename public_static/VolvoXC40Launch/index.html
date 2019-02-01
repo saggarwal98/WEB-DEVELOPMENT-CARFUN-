@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+   
+        <style>
+          .dropbtn {
+              background-color: #4CAF50;
+              color: white;
+              padding: 0px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+              width:100px;
+          }
+          
+  
+          
+          #myInput {
+              border-box: box-sizing;
+              background-image: url('searchicon.png');
+              background-position: 14px 12px;
+              background-repeat: no-repeat;
+              font-size: 16px;
+              padding: 14px 20px 12px 45px;
+              border: none;
+              border-bottom: 1px solid #ddd;
+          }
+          
+          #myInput:focus {outline: 3px solid #ddd;}
+          #myInput{
+          width:430px;
+          }
+          
+          .dropdown {
+              position: relative;
+              display: inline-block;
+             
+          }
+          
+          .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f6f6f6;
+              
+              overflow: auto;
+              border: 1px solid #ddd;
+              z-index: 1;
+              margin-left: 200px
+          }
+          
+          .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+          
+     
+          
+          .show {display: block;}
+  
+          .c:hover{
+  background-color: gray;
+  
+  
+          }
+          .d{
+                  width: 420px;
+  height: 400px;
+                  overflow: scroll; 
+          }
+  
+  
+          </style>
+  
+          
+  <script>
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                  if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      a[i].style.display = "";
+                  } else {
+                      a[i].style.display = "none";
+                  }
+              }
+          }
+          </script>
+          
+  </head>
+  <body>
+  
+
+
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        
+        <a href="/">
+          <img src="logo.png" height="50px" width="50px" style="border-radius: 50%;">
+                </a>
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    New Cars
+                  </a>
+                  <div class="dropdown-menu s7">
+                    
+                    <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                    <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Reviews
+                      </a>
+                      <div class="dropdown-menu s7">
+                        <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                        <a class="dropdown-item" href="/videos">Videos</a>
+                        <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Specials
+                          </a>
+                          <div class="dropdown-menu s7">
+                            <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                            <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                            
+                          </div>
+                          
+                        </li>
+
+                      
+
+
+
+
+
+                        <li class="nav-item dropdown ">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Brand
+                          </a>
+                          <div class="dropdown-menu s7">
+                            <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                            <a class="dropdown-item" href="/3">Hyundai</a>
+                            <a class="dropdown-item" href="/brands/honda">Honda</a>
+                            <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                            <a class="dropdown-item" href="/brands/ford">Ford</a>
+                            <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                            
+                          </div>
+                          
+                        </li>
+
+
+
+
+                        <li class="nav-item dropdown ">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Used Cars
+                          </a>
+                          <div class="dropdown-menu s7">
+                                                                
+                              <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                           
+                            <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                            <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                            <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                            <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                        
+
+                            
+                          </div>
+                          
+                        </li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="dropdown"></div>
+                      <button onmouseover="myFunction()" class="dropbtn btn btn-success">Search</button>
+                      <div id="myDropdown" class="dropdown-content d" >
+                                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                      <a href="/usedcarsindelhi" class="c">Used Cars In Delhi</a>
+                                      <a href="/usedcarsinmumbai" class="c">Used Cars In Mumbai</a>
+                                      <a href="/usedcarsinbangalore" class="c">Used Cars In Bangalore</a>
+                                      <a href="/usedcarsinhyderabad" class="c">Used Cars In Hyderabad</a>
+                                      <a href="/brands/bmw/bmwx1/" class="c">BMWX1</a>
+                                      <a href="/brands/bmw/" class="c">BMW</a>
+                                      <a href="/brands/ford/" class="c">Ford</a>
+                                      <a href="/reviews" class="c">Reviews</a>
+
+
+
+
+                                      <a href="/brands/toyota/" class="c">Toyota</a>
+                                      <a href="/brands/honda/" class="c">Honda</a>
+                                      <a href="/brands/3/" class="c">Hyundai</a>
+                                      <a href="/brands/2/" class="c">Maruti Suzuki</a>
+                                      <a href="/brands/bmw/BMW5Series/" class="c">BMW 5Series</a>
+                                      <a href="/brands/bmw/Toyota_Land_Cruiser/" class="c">Land Cruiser</a>
+                                      <a href="/brands/ford/Ford_Ecosport/" class="c">Ecosport</a>
+                                      <a href="/honda_amaze/" class="c">Amaze</a>
+                                      <a href="/brands/bmw/BMW3Series/" class="c">BMW 3Series</a>
+                                      <a href="/brands/bmw/BMWi8/" class="c">BMW i8</a>
+                                      <a href="/brands/bmw/BMW7Series/" class="c">BMW 7Series</a>
+                                      <a href="/brands/bmw/BMWX3/" class="c">BMW X3</a>
+                                      <a href="/brands/bmw/BMWX5/" class="c">BMW X5</a>
+                                      <a href="/brands/bmw/BMW3SeriesGT/" class="c">BMW 3Series GT</a>
+
+                                      
+
+
+                              </div>
+
+                       
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+             
+              
+
+                      
+                        
+
+                        
+
+
+                        
+                        
+              </ul> 
+
+
+              
+              
+             
+             
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <form class="form-inline" action="/login">
+                 
+                  <button class="btn btn-success search" type="submit">Login</button>
+                </form>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form class="form-inline" action="/signup">
+                 
+                  <button class="btn btn-success search" type="submit">Signup</button>
+                </form>
+               
+
+            </nav>
+            </div>
+<div id="demo" class="carousel slide container" data-ride="carousel">
+
+        
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          
+        </ul>
+        
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="file:///C:/Users/vinu1/Desktop/Coding%20Blocks/Car%20Project/Volvo%20XC40%20Launch/Volvo%20XC40%20Launch.html">
+            <img src="image1.jpg"  width="1100" height="500">
+            <div class="carousel-caption">
+                   
+                  </a>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image2.jpg"  width="1100" height="500">
+            <div class="carousel-caption">
+                   
+                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image3.jpg"  width="1100" height="500">
+            <div class="carousel-caption">
+                    
+                </div>
+          </div>
+          
+        </div>
+        
+       
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <iframe width="250" height="250" style="margin-left: 50px" src="https://www.youtube.com/embed/kT90Xjg9J6Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/QUtE6wld4k4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/DmRObsG4_5U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/uZRXXbZXRUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <h1 style="margin-left: 30px">Reviews</h1>
+
+
+      </div>
+
+      <div class="container">
+         
+          <br>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link " data-toggle="tab" href="#OverView">OverView</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#OnTheInSide">On The InSide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#Driving">Driving</a>
+            </li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="OverView" class="container tab-pane active"><br>
+              
+              <p style="color: darkslateblue;font-size: 20px">The XC40 is what happened when Volvo decided to bound, for the first time, into the compact SUV arena. An area that’s become so crowded that the thing hits the European market (though not RHD Britain) within days of Jaguar’s corresponding car, the E-Pace.
+
+                  Volvo people say they’ve also aimed it squarely at the Mercedes GLA, Audi Q3, BMW X1 and Range Rover Evoque. The Lexus NX and Infiniti QX30 represent Japan here, and the DS7 will wave the tricoleur.
+                  
+                  All those cars are transverse-engined and steel-bodied, even when they come from brands that usually do longitudinal and multi-material. They all choose that layout because it gives lots of cabin space in a relatively compact footprint, and it keeps cost down.
+                  
+                  If you have trouble telling your BMW X1s from your X3s and X5s, you’ll note Volvo hasn’t taken the same reiterative approach to design. They went to the trouble of thinking of some new lines and shapes that you can tell it apart from an XC60 and XC90. So it has an angular, relatively small side glass area, and stretched octagonal cut-outs in the lower body side. Two-tone paint schemes feature prominently in the configurator.
+                  
+                  Inside, it’s also colourful (if you want it to be). Visual options run the gamut up to (and including) red carpet on the floor and lower doors. Having seen past that shock, you’ll find it’s usefully roomy and practical. The cabin and boot have several clever ideas to keep your chattels organised and stop them slithering about.
+                  
+                  The XC40 doesn’t use a shrunk version of the XC60/XC90 structure and suspension, either. The XC40’s brand-new platform is called ‘compact modular architecture’. The CMA uses more space-efficient, cheaper rear suspension (four-link with steel arms and coils as opposed to five-link with composite leaf spring).
+                  
+                  Costs will also pushed down not just by making a new V40, but by sharing this platform with premium Chinese brand Lynk & Co. Both Volvo and Lynk & Co are owned by the Geely conglomerate.
+                  
+                  Although it’s a joint venture, this platform was engineered in Sweden and so it uses Volvo’s now-familiar four-cylinder diesel and petrol engines. It also has the same screen interfaces as bigger Volvos, and the same driver-assist and safety systems. So it’s a proper Volvo and it feels like one.</p>
+            </div>
+
+
+
+            <div id="OnTheInSide" class="container tab-pane"><br>
+              
+              <p style="color: darkslateblue;font-size: 20px">
+                <img src="image4.jpg" height="500px" width="500px" style="float: right">
+                The cabin is amped-up a bit compared with the calm nordic vibe of the bigger Volvos. The air vents stand out from the dash in little oblong nacelles, and the dash garnish strips are scalloped out of the main surface. They’re also top-lit, and come in chequerboard machined aluminium as an alternative to birch-forest natural-matte wood.
+
+Rather than covering the doors entirely in leather or fake pleather, Volvo wraps a major section of the XC40’s door inner in a fuzzy material colour-matched to the carpet. Refreshingly bold or revoltingly barmy? We think the former.
+
+All versions get both a full-size centre-dash connected screen with fully traffic-aware navigation, and a full-TFT driver display. This is the sort of kit that rival premium makers always show in their adverts (and fit to their press test cars) but actually charge extra for. Same goes for LED headlights and 18-inch wheels.
+
+As always with Volvo’s touchscreen system, it’s got nice graphics and understandable menus. But easy to fathom isn’t the same as easy to use. Many functions demand a series of multiple screen-presses, which is hard to do when you’re bouncing down the road. None of it can be done by haptics alone, so you have to take your eyes off the driving. More actual hardware switches would help.
+
+The seats are terrific, and the driving position is generally fine. It’s an SUV position, with your back upright and your legs down. As we’ve seen in its dynamics, it doesn’t pretend to be a low-slung sportster.
+
+Rear leg and headroom are fine for adults. Kids might find the rising window line chops off their sideways view. Or do kids ever look out of the window these days? They’re all on their devices. And the XC40 provides plenty of ports to charge them, as well as wifi.
+
+Cabin storage is the sum of some clever ideas. The hi-fi bass units are in the dash rather than the doors, which frees up enough space in each door bin to swallow a laptop. Meanwhile the console includes two lidded bins behind the cupholders.
+
+One is the deep armrest bin. The second bin is removable, so you can use it as a rubbish bin and rapidly void the cabin of accumulated sweet wrappers, parking tickets and orange peel. A curry hook folds out from the glovebox lid in case you’re doing a little freelance Deliverooing.
+
+The boot floor does a clever origami up-fold that divides the boot into two, making a deep trough to stop shopping bags toppling. The parcel shelf fits under the floor too. The sort of boring stuff that doesn’t sell a car, but does make it easier to live with.</p>
+            </div>
+            
+            
+            <div id="Driving" class="container tab-pane fade"><br>
+              
+              <p style="color: darkslateblue;font-size: 20px">Engine choices are all Volvo’s four-cylinder block, and follow simple naming conventions: D for diesel, T for turbo petrol. Then a number: 3 is around 150bhp, 4 is 190bhp and 5 is 250bhp. The choice is diesels as D3 and D4, plus petrols as T3, T4 and T5. Manual and front-wheel drive are available for the the D3 and T3, but higher up the power scale it becomes all-wheel drive and automatic gearbox only.
+
+                  Volvo reckons well over half XC40s sold in the UK will have that low-power D3 engine, though many will have the ‘sporty’ looking R Design trim. That underlines the wisdom of the chassis settings: this is a soft-riding car for making gentle progress, not a firmly-sprung tyre-stressing terroriser of backroads.
+                  
+                  The cars we tried at the off were D4 and T5, both with automatic transmission and AWD. In raw numbers the performance is competitive, as the XC40’s weight has been kept in check at around 1,700kg for these AWD cars. The diesel get to 62mph in under eight seconds, the petrol in 6.5secs. There’s handy mid-rev kick that’s not over-burdened with lag.
+                  
+                  If you’ve been in any of the recent bigger Volvos, the quality of these engines springs no surprises. The diesel is quiet for its type but it carries a harsh edge that never goes away. Not wildly pleasant. Nor the petrol: it drones at low revs, then emits a drab and slightly tingly hubbub as you work it higher into the revs.
+                  
+                  Also, the eight-speed gearbox can be a bit indecisive, and when it does make a choice it’s often accompanied by a jerk. I found myself using the paddle shifters. It meant I could keep the engine in its most sonically acceptable rpm range, as well as make sure the transmission wasn’t shifting under load.
+                  
+                  Given how the powertrain is barely competitive for the car’s premium ambitions, it would be quite a feat if the rest of the dynamics managed to make up lost ground. But they do.
+                  
+                  Running out through the suburbs, the suspension bears you along in superb repose, with supple springing and quiet tyres. When you add a bit of speed, the body movements tend towards the floaty. Which makes you expect the whole assembly is going to turn into a flubby mess as soon as you try a bit of brisk cornering.
+                  
+                  It surprises you, though. Once it’s through that phase of long-amplitude movement, it doesn’t lose any more discipline. It gains roll and yaw angles with a nicely calibrated and progressive grace. The AWD system is a good antidote to understeer. So it can hustle its way down a set of twists perfectly respectably. A small steering wheel and reasonably quick ratio make it feel surprisingly light and agile in city junctions, but it stops mercifully short of pointless flightiness at speed.
+                  
+                  Don’t imagine any of this is exactly a barrel of laughs, though. The steering has been given strong anaesthesia, and you won’t find much interaction between throttle and cornering line. But the point is, if you want that sort of tyre-stressing fun, an SUV is the wrong place to find it. You want a car with a lower centre of gravity. An estate. The XC40 instead has a tidy and relaxing chassis that does exactly what a SUV should. It’s comfortable to be in and at ease with itself.
+                  
+                  Acoustic comfort is well taken care of, too. There’s little wind noise or racket from the tyres. It’s a peaceful cruiser. You can get Volvo’s optional Drive Pilot, which is radar cruise and lane-following. It won’t drive the car and you’d be a total fool to zone yourself out. But if you allow yourself to have your hands held, it can helpfully cut long-trip fatigue.
+                  
+                  Off motorways, and away from roads at all, the XC40 isn’t a Land Rover or Jeep, but it does have a useful measure of bad-surface smarts. The tyres are chunkily treaded. Approach and departure angles aren’t bad, there’s 21cm of ground clearance, and you can switch to an off-road calibration for the powertrain and ESP.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      
+</body>
+</html>

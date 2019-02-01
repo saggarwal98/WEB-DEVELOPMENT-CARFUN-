@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-widthx, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Honda Amaze</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="style.css">
+       <style>
+           #carouselExampleIndicators{
+               height:500px;
+               width:1000px;
+               /* background-color: black; */
+           }
+           body{
+               margin-left:20px;
+           }
+           .cont1{
+            display:flex;
+                justify-content: space-evenly;
+                height:220px;
+           }
+           .cont2{
+            display:flex;
+                justify-content: space-evenly;
+                height:300px;
+           }
+           .cont{
+                display:flex;
+                justify-content: space-evenly;
+                height:270px; 
+           }
+           .item1{
+               height:200px;
+               width:600px;
+           }
+           .item2{
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item3{
+               margin-top:60px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item4{
+               margin-top:20px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item5{
+               margin-top:80px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+       </style> 
+       <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
+    </head>
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+                         
+        
+                      </nav>
+                    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="AMAZE.jpg" alt="First slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="amaze4.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+        <br>
+
+
+
+        <center><p class="h1">HONDA AMAZE</p></center>
+        <!-- <center><img src="Q43.png" height=50px></center> -->
+
+
+        <p style="margin-left:280px;margin-right:260px;">Bro is not a size, it is your place in the world. It is an attitude, it is your identity, so step up, stand out and take charge, it's time for you to make big move.</p>
+            
+        <b><font size=5>REVIEW<br></font></b><br>
+
+
+        <div class="cont1">
+                <div class="item1">
+                    <!-- <p><b>The 2018 Audi Q7 delivers exactly what luxury buyers want: room for the whole family and some of the most advanced technology ever fitted to a new car.</b></p><br> -->
+                    The Amaze is like a superhero, for Honda; and, an unlikely one at that. Sort of like Mr. Incredible, who's not your mainstream hero, but is equally effective and hence deserves a sequel. The second generation of the Amaze has earned its birthing, as Honda has sold 2.5 lakh units of the car, in the past 5 years. But, there's a lot that's happened, in that time, in the subcompact sedan segment, as Maruti Suzuki has just upped the ante, with the new Dzire; and Volkswagen, as also Ford are set to bring in their action models of the Ameo and the Aspire. Honda has its hands full, then, as it has had to look at every package the competitor has to offer and provide just that bit more, to make the Amaze stand out.Everything about the second generation Amaze is new, including the fact that it's based on a new platform. The subcompact sedan has grown in size, by 5mm, though it's still under 4 metres in length (3995mm) and it's wider too, by 15mm. The petrol powered Amaze is 17 kilos lighter than its predecessor; while the diesel version is 23 kg lighter.
+                </div>
+                <div class="item3">
+                    <img src="amaze5.png" style="width:450px">
+                </div>
+            </div><br><br><br><br><br><br><br>
+            <font size=4><center><u><b>Styling<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The Audi Q7 is a stunner inside with its exceptional cabin.</p></b> -->
+                            Every angle of the all new Amaze has been shaped to make a bigger impression. The aggressive front, the imposing shape, the sculpted contours – all come together to create a bold, solid design. One look at the all new Amaze and there will be no question about who's the next big name in town.
+                            <br>Ergonomically, everything is at your disposal, when you're in the driver's seat, which is great. The piano black treatment, on the dashboard, looks great and the plastic quality is better than before. The cabin now receives a dual tone treatment, with beige and black being the choice and it makes the cabin look a bit more spacious.
+                            The first-gen Honda Amaze was one of the nicer looking cars of the first crop of compact sedans and things have improved for the better on the second-gen model. There’s a more prominent bonnet section, a neatly done rear end and, in general, a greater balance to the design. There’s more than a hint of larger Honda sedans to the styling, and the grille design, with its chrome garnish, serves to link the Amaze to the updated City. New 10-spoke alloy wheels round up the changes on the outside.
+                    </div>
+                    <div class="item3">
+                        <img src="amaze8.png"  style="width:450px">
+                    </div>
+            </div><br><br><br><br>
+            <font size=4><center><u><b>Performance<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>A wonderful ride quality, accurate steering, and a turbo 4 make the Q7 a terrific road trip car.</p></b> -->
+                            Honda offers the 1.2 petrol with the CVT and manual transmission options. This 1199cc, 4- cylinder engine still makes 90PS of power and 110Nm of torque. Yep, same as before. However, Honda has tweaked the internals to improve efficiency and smoothness.<br>
+                            The 1.5-litre diesel engine is also rated at 100PS and 200Nm for the manual. However, to reduce noise and vibration the block stiffness has been increased, a new layer of damping material has been added on top of the head cover and there are new engine mounts too. Then, to be doubly sure, Honda has gone crazy with sound deadening blankets in the engine bay. Under the hood, on the firewall, under the engine and inside the cabin too, there’s more absorption material to improve the in-cabin experience. The manual gearbox is a new five-speed unit that is lighter and more efficient too. The diesel is also offered with a CVT automatic gearbox, for which the engine’s output is capped at 80PS and 160Nm.
+                        </div>
+                    <div class="item4">
+                        <img src="amaze7.png"  style="width:200px">
+                    </div>
+            </div><br><br><br>
+            <font size=4><center><u><b>Comfort & Quality<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>Excellent room for five, an upscale feel, and a roomy cargo bay are offset by a tight third row.</p></b> -->
+                            The cabin experience in the previous Amaze was quite disappointing -- that was, until the facelift came about. The second generation Amaze is taking this challenge head on. It takes a leaf out of its elder siblings’ design book to make a unique statement. The face, depending on where you stand, reflects the BR-V or City. On the outside the stubby boot gets split tail lamps that are inspired from the new Accord. The new Amaze looks larger than the outgoing model. While it is wider by 15mm and just 5 mm longer, the flat hood and stubby rear come together to make it look more substantial.On the inside, like the new CR-V, the vents that sit on top of the dashboard and the touchscreen jut out to give it a more technical look. The chunky steering wheel also looks like it could have been borrowed from a bigger Honda. Drivers will appreciate the new, cleaner looking instrument cluster which has just two dials with the MID in the centre.
+                        </div>
+                    <div class="item4">
+                        <img src="amaze3.png"  style="width:450px">
+                    </div>
+            </div><br><br>
+            <font size=4><center><u><b>Safety<br><br></b></u></center></font>
+            <div class="cont">
+                    <div class="item1">
+                            <!-- <b><p>The 2018 Audi Q7 has done well in crash tests and comes standard with collision-avoidance features.</p></b> -->
+                            The Amaze is making a much needed leap forward on this front. With regards to safety, ABS with EBD and dual airbags are offered as standard. Adjustable headrests on the front seats improve the protection level. The driver also gets treated to a reversing camera along with rear parking sensors. The latter is a feature even the City doesn’t have! Cruise control is also on offer here, however, only on the manual variants. A few irregular shut lines, especially around the glovebox, a very flimsy plastic panel on which the USB ports are mounted, and the hard plastics on the dash dampen the otherwise more appealing cabin experience.
+                        </div>
+                    <div class="item2">
+                        <img src="amaze2.jpg"  style="width:450px">
+                    </div>
+            </div>  
+            <font size=4><center><u><b>Features<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>A loaded Audi Q7 might as well have a Bentley badge on it.</p></b> -->
+                             Adjustable headrests on the front seats improve the protection level. The driver also gets treated to a reversing camera along with rear parking sensors. The latter is a feature even the City doesn’t have! Cruise control is also on offer here, however, only on the manual variants.
+                            <br>In terms of features, the Amaze misses out on a few wow elements offered by the competition. The Honda has LED DRLs, but it misses out on LED headlamps or projectors, and it doesn’t have automatic headlamps either.Honda’s Digipad infotainment system, which has been a pet peeve of ours, has been fixed too. The Digipad 2.0, offered only on the top end VX variant, is responsive to touch inputs, works smoothly and now also packs in Android Auto and Apple CarPlay.The infotainment system also packs inbuilt maps which offer a very smart and easy to use experience. The menus are also easy to use, however the sound quality from the 4-speaker setup is a bit dull.
+                        </div>
+                    <div class="item3">
+                        <img src="amaze1.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br>
+            <font size=4><center><u><b>Fuel Economy<br><br></b></u></center></font>
+            <div class="cont1">
+                    <div class="item1">
+                            <!-- <b><p>For what it is, the Audi Q7 isn't all that thirsty.</p></b> -->
+                            This engine just isn’t peppy enough for anything more than city commuting. The low hum from the engine bay makes you wonder: Is this the i-Dtec? A leopard changes its spots! Sure, it isn’t whisper quiet, but its not annoying any more. Even when you accelerate hard, the diesel rumble is low enough for us to wonder: Is it as low as the competition now? In our books that is a massive win for Honda, especially when you package in the excellent drivability on offer from the i-Dtec.<br>
+                            Honda claim a fuel efficiency of 27.4 kmpl which is 2.4kmpl more than before. Part of the credit in efficiency would also have to be attributed to the weight savings.
+                        </div>
+                    <div class="item2">
+                        <img src="amaze6.jpg"  style="width:400px;margin-left:30px">
+                    </div>
+            </div>  
+    </div>
+    <br>
+    <br>
+
+    <div class="container-fluid bg-grey" style="height: 300px">
+            <br>
+            <br>
+            
+             <p>
+            
+                          <div class="row">
+                        <div class="col-sm-4">
+                          
+                        <h6><b>Overview</b></h6>
+                                                
+                        <a href="/aboutus" style="color: black">
+                        About Us
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        FAQs
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Privacy Policy
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Terms And Conditions
+                      </a>
+              </p>
+            </div>
+                    
+            <div class="col-sm-4">
+                    <h6><b>Used Cars By Places</b></h6>
+                    <a href="/usedcarsindelhi" style="color: black">
+                      Delhi
+                    </a>
+                    <br>
+                    <a href="/usedcarsinmumbai" style="color: black">
+                     Mumbai
+                      </a>
+                      <br>
+                      <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                        </a>
+                        <br>
+                        <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                          </a>
+                          <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6><b>Follow Us On</b></h6>
+                        <a href="#" style="color: black">
+                            <p>
+                                <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                                <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                            <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                        </p>
+                          
+                    </a>
+                        <br>
+                        
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;<b> @2018copyright carfun</b>
+         </div>
+        
+</body>
+</html>
+</body>

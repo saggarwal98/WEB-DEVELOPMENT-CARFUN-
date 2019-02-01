@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>    
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <style>
+                .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 0px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    width:100px;
+                }
+                
+  
+                
+                #myInput {
+                    border-box: box-sizing;
+                    background-image: url('searchicon.png');
+                    background-position: 14px 12px;
+                    background-repeat: no-repeat;
+                    font-size: 16px;
+                    padding: 14px 20px 12px 45px;
+                    border: none;
+                    border-bottom: 1px solid #ddd;
+                }
+                
+                #myInput:focus {outline: 3px solid #ddd;}
+                #myInput{
+                width:430px;
+                }
+                
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                   
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f6f6f6;
+                    
+                    overflow: auto;
+                    border: 1px solid #ddd;
+                    z-index: 1;
+                    margin-left: 200px
+                }
+                
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+                
+           
+                
+                .show {display: block;}
+
+                .c:hover{
+background-color: gray;
+
+
+                }
+                .d{
+                        width: 420px;
+    height: 400px;
+                        overflow: scroll; 
+                }
+
+
+                </style>
+
+                
+<script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                function filterFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+                
+
+    <title>CARFUN</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+                  <a href="/">
+                <img src="logo.png" height="50px" width="50px" style="border-radius: 50%;">
+                      </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <div class="dropdown"></div>
+                                <button onmouseover="myFunction()" class="dropbtn btn btn-success">Search</button>
+                                <div id="myDropdown" class="dropdown-content d" >
+                                                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                                <a href="/usedcarsindelhi" class="c">Used Cars In Delhi</a>
+                                                <a href="/usedcarsinmumbai" class="c">Used Cars In Mumbai</a>
+                                                <a href="/usedcarsinbangalore" class="c">Used Cars In Bangalore</a>
+                                                <a href="/usedcarsinhyderabad" class="c">Used Cars In Hyderabad</a>
+                                                <a href="/brands/bmw/bmwx1/" class="c">BMWX1</a>
+                                                <a href="/brands/bmw/" class="c">BMW</a>
+                                                <a href="/brands/ford/" class="c">Ford</a>
+                                                <a href="/reviews" class="c">Reviews</a>
+
+
+
+
+                                                <a href="/brands/toyota/" class="c">Toyota</a>
+                                                <a href="/brands/honda/" class="c">Honda</a>
+                                                <a href="/brands/3/" class="c">Hyundai</a>
+                                                <a href="/brands/2/" class="c">Maruti Suzuki</a>
+                                                <a href="/brands/bmw/BMW5Series/" class="c">BMW 5Series</a>
+                                                <a href="/brands/bmw/Toyota_Land_Cruiser/" class="c">Land Cruiser</a>
+                                                <a href="/brands/ford/Ford_Ecosport/" class="c">Ecosport</a>
+                                                <a href="/honda_amaze/" class="c">Amaze</a>
+                                                <a href="/brands/bmw/BMW3Series/" class="c">BMW 3Series</a>
+                                                <a href="/brands/bmw/BMWi8/" class="c">BMW i8</a>
+                                                <a href="/brands/bmw/BMW7Series/" class="c">BMW 7Series</a>
+                                                <a href="/brands/bmw/BMWX3/" class="c">BMW X3</a>
+                                                <a href="/brands/bmw/BMWX5/" class="c">BMW X5</a>
+                                                <a href="/brands/bmw/BMW3SeriesGT/" class="c">BMW 3Series GT</a>
+                                                <a href="/brands/ford/Ford_Ecosport/" class="c">Ford Ecosport</a>
+
+                                                
+
+
+                                        </div>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+                         
+        
+                      </nav>
+                    </div>
+                    
+            
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid">
+               
+                
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        New Car Purchase
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                      <div class="card-body">
+                            1. Do Your Research
+                            The most important thing to know before you buy a car is that knowledge is power. It’s a mistake to arrive at a car lot without first researching the car you want to buy. You can find out just about anything you want to know about a car online. Auto Trader, Consumer Reports, Kelley Blue Book, and the Yahoo! Autos section are great places to start researching cars in your price range.
+                            <br>
+                            2. Look into Pre-financing Options
+                                Many people obtain financing from the car dealership, but this isn’t fiscally responsible. Dealership interest rates are typically much higher than loan rates obtained from banks and credit unions. Your bank or credit union is one of the best places to start researching car loan rates, and you can obtain “relationship discounts” that you won’t find anywhere else.
+                                <br>
+                                3. Shop Around
+                                Unless there is an emergency situation, shop around before you buy a car. I have an established rule in place whenever I shop for a car: I always make sure that I walk out of at least one dealership. This way, I always know their rock-bottom price, often given to me just before I leave. It might also make sense to explore out-of-town car dealerships. Dealerships price their vehicles differently depending upon their location.
+                                    <br>
+                                4. Negotiate Terms
+                              To me, buying a car is either a chess match, or it’s a war. Next to buying a house, purchasing a new car is one of the most important investments you will make in life. In fact, you may be paying off this car for the next four, five, or six years.
+
+Let the salespeople know up front that you’re not going to be taken for a ride. Do everything you can do to negotiate the car loan and knock the purchase price down. Start with a ridiculous number, and work backwards. If the salesperson gives you an offer that includes a monthly payment of a certain amount based on a 60-month loan, tell them you want the same payment with a 48-month loan.
+<br>                  
+5. Look at Both New and Used Cars
+In the past, buying a gently used car was the best way to save money when purchasing a vehicle. A big reason behind this logic is that new cars depreciate considerably the moment they are taken home from the dealership.
+<br>
+6. Buy Based on Purchase Price, Not on Monthly Payments
+Car dealers are notorious for offering a very attractive monthly payment to potential buyers. Do not be misled. If this “wonderful” payment is attached to a 72-month loan, then it’s really not that attractive at all.
+<br>              
+
+
+
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      Old Car Purchase
+                    </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                            
+                            
+                            1. Transfer the Registration Certificate (RC) of the second hand car in your name
+For this, you should fill out and submit Form 29 & Form 30, issued by the RTO in the jurisdiction you live in (Find the RTO closest to your residence here). The form should be signed by both the previous owner and you. If the car is registered in a different jurisdiction from yours, then an NOC from that jurisdiction's RTO will help speed the process. This registers the transaction.
+<br>
+2. Get the second-hand car insurance in your name
+It's as important to have a valid insurance policy copy in your name as it is to get the registration transferred. If the RC is registered in your name and the policy is still under the previous owner's, then the insurance policy stands nullified! So, it's very important to transfer the insurance in your name after buying second hand car.
+                     
+   <br>
+   3. Transfer of No Claim Bonus (NCB)
+NCB is given to the insured and not the insured vehicle. Hence, on transfer of the vehicle, the insurance policy can be transferred to the new owner but not the NCB. The new owner has to pay the difference on account of the NCB for the balance policy period. The original owner can, however, use the NCB on a new vehicle purchased by him.                  
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Car  Insurance
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                           1. Do an Annual Rate Check
+                            If you’ve been with the same insurer a long time, it might be tough to beat its rates, especially if you haven’t had any claims lately. In fact, a 2014 survey by the Consumer Reports National Research Center found that only 10 percent of 19,000 ConsumerReports.org subscribers who compared premiums found that they would save money by switching insurers.
+                        <br>
+                        2.Pick a Top-Rated Insurer
+                        Saving money isn’t simply a matter of finding the lowest premium. Some insurers have lower premiums, but end up costing you more in the end by lowballing loss estimates, hassling the repair shop to cut corners, and forcing you to pay extra for original-equipment replacement parts. They might even unfairly jack up your premiums after an accident.
+                        <br>
+                        3.Set the Right Deductible
+                        A higher deductible reduces your premium because you pay more out of pocket if you have a claim. Hiking your deductible from $200 to $500 can cut your premium on collision by 15 to 30 percent. Go to $1,000 and you could save 40 percent. If you have a good driving record and haven’t had an at-fault accident in years, if ever, opting for a higher deductible on collision might be a good bet. Just make sure you can afford to pay that cost if your luck runs out. 
+                        <br>
+                        4.Review All of Your Coverage
+                        Your liability coverage pays for bodily injury and property damage that you cause in accidents. Don’t get caught short by reducing your liability limits to the state minimums. Buying more coverage might seem like an odd way to save, but the benefit comes if you have a costly claim, which can put your life’s savings at risk.
+                        <br>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                        <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                          Car Loan
+                        </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                                Cars have become an important part of our life and buying one has become easier. With a number of auto loans on offer, buying a car is now relatively straightforward. However, one needs to keep in mind some simple things before seeking a car loan. 
+
+                                Negotiate the car price - It is often overlooked, but the best way to bring down the cost of a loan is to negotiate the price of a car. Dealers have a sizeable margin on every new car sales and you would do well to get some discount.
+                                
+                               
+                          </div>
+                        </div>
+                        <div class="card">
+                                <div class="card-header">
+                                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                 Driving A Car
+                                </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                  <div class="card-body">
+                                        1. Get familiar with your car
+                                        The first thing that you should do before you start driving is to get comfortable with your car. Get familiar with the basics of the car in theory before you practically start driving it. Learn what a clutch does, understand the gear arrangements and learn facts like one should never shift to a lower gear at a higher speed and that it's always better to let the car come to a stop before you engage the reverse gear.
+                                        <br>
+                                        2. Correct your seating position
+                                        The right seating position is crucial; even experienced drivers don't position themselves correctly and thus lack comfort and control, which increases the probability of accidents. Ensure that you sit straight with your back and buttocks cupped in the seat fully and are at an angular position thus helping to prevent back injuries. The seat should be set in a position where you can see all around, very easily and comfortably. It is usually said that the height of the seat should be such that your eyes are at half the height of the windshield. The seat should longitudinally be at a position where your knees are not stretched too much when you apply the accelerator, brake, and clutch pedals of the car. Push the brake fully with your right foot and depress the clutch, this should be done in a manner such that while depressing the pedals fully, your knees stay bent at about 120 degrees. Sit upright and don't stoop forward.
+                                        <br>
+                                        3. Avoid distractions
+                                        Once you are in the driver's seat, be attentive, adjust the mirrors, wear your seatbelt and keep the rules of the road in mind. Avoid distractions while you are driving because nowadays the roads are jam packed and therefore you need to keep your eyes and attention focused towards it for every single second. Two most common and basic rules before you start driving; don't use a mobile phone while driving and don't drink and drive. Along with these rules, new drivers especially should avoid eating, turning up the music to a very high volume and indulging in deep conversations.
+                                        <br>
+                                        4. Holding the steering wheel correctly
+                                        Though there is no one correct way of holding a steering wheel, the correctness depends on how you want to hold it to be able to have maximum control over the wheel. Most researches show that the '9 o'clock and 3 o'clock' position is the best. It's very important to hold your steering wheel correctly to have the best control of the steering and, in turn, the car.
+                                        <br>
+                                  </div>
+                                </div>
+                                
+                </div>
+              </div>
+
+<br>
+<br>
+
+
+
+<div class="container-fluid bg-grey" style="height: 300px">
+    <br>
+    <br>
+    
+     <p>
+    
+                  <div class="row">
+                <div class="col-sm-4">
+                  
+                <h6><b>Overview</b></h6>
+                                        
+                <a href="/aboutus" style="color: black">
+                About Us
+              </a>
+                <br>
+                <a href="/FAQs" style="color: black">
+                FAQs
+              </a>
+                <br>
+                <a href="/privacy_policy" style="color: black">
+                Privacy Policy
+              </a>
+                <br>
+                <a href="/terms_conditions" style="color: black">
+                Terms And Conditions
+              </a>
+      </p>
+    </div>
+            
+    <div class="col-sm-4">
+            <h6><b>Used Cars By Places</b></h6>
+            <a href="/usedcarsindelhi" style="color: black">
+              Delhi
+            </a>
+            <br>
+            <a href="/usedcarsinmumbai" style="color: black">
+             Mumbai
+              </a>
+              <br>
+              <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                </a>
+                <br>
+                <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                  </a>
+                  <br>
+            </div>
+            <div class="col-sm-4">
+                <h6><b>Follow Us On</b></h6>
+                <a href="#" style="color: black">
+                    <p>
+                        <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                          
+                       
+                </a>
+                <a href="#" style="color: black">
+                  
+                        <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                          
+                       
+                </a>
+                <a href="#" style="color: black">
+                  
+                    <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                </p>
+                  
+            </a>
+                <br>
+                
+                </div>
+          </div>
+          <br>
+          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;<b> @2018copyright carfun</b>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          
+
+                <a class="navbar-brand" href="#">Logo</a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      New Cars
+                    </a>
+                    <div class="dropdown-menu s7">
+                      
+                      <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                      <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Reviews
+                        </a>
+                        <div class="dropdown-menu s7">
+                          <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                          <a class="dropdown-item" href="/videos">Videos</a>
+                          <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Specials
+                            </a>
+                            <div class="dropdown-menu s7">
+                              <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                              <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                              
+                            </div>
+                            
+                          </li>
+
+                        
+
+
+
+
+
+                          <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Brand
+                            </a>
+                            <div class="dropdown-menu s7">
+                              <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                              <a class="dropdown-item" href="/3">Hyundai</a>
+                              <a class="dropdown-item" href="/brands/honda">Honda</a>
+                              <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                              <a class="dropdown-item" href="/brands/ford">Ford</a>
+                              <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                              
+                            </div>
+                            
+                          </li>
+
+
+
+
+                          <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Used Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                                                                  
+                                <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                             
+                              <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                              <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                          
+
+                              
+                            </div>
+                            
+                          </li>
+
+                         
+                          
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                
+
+                        
+                          
+
+                          
+
+
+                          
+                          
+                </ul> 
+
+
+                
+                
+               
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form class="form-inline" action="/login">
+                   
+                    <button class="btn btn-success search" type="submit">Login</button>
+                  </form>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <form class="form-inline" action="/signup">
+                   
+                    <button class="btn btn-success search" type="submit">Signup</button>
+                  </form>
+
+
+              </nav>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+<h1>
+    TERMS AND CONDITIONS
+</h1>
+
+<p>
+        Girnar Software Private Limited (hereinafter referred to as “Girnar” or “We” or “Us” or “Our”) welcome you at CarDekho.com (A venture of Girnar) for doing your car search, your search and access to certain financial products, including but not restricted to, loans, insurance & other financial products as offered by third parties, posting advertisements, etc.
+        THESE WEBSITE TERMS OF USE ("Terms Of Use") IS AN ELECTRONIC RECORD IN THE FORM OF AN ELECTRONIC CONTRACT FORMED UNDER INFORMATION TECHNOLOGY ACT, 2000 AND RULES MADE THEREUNDER AND THE AMENDED PROVISIONS PERTAINING TO ELECTRONIC DOCUMENTS / RECORDS IN VARIOUS STATUTES AS AMENDED BY THE INFORMATION TECHNOLOGY ACT, 2000. THESE TERMS OF USE DOES NOT REQUIRE ANY PHYSICAL, ELECTRONIC OR DIGITAL SIGNATURE.
+        This Terms of Use is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of Website (defined below).
+        The domain name www.cardekho.com is owned by Girnar Software Private Limited [U72200RJ2006PTC023499], a company incorporated under the Companies Act, 1956 with its registered office at Girnar, 21, Govind Marg, Moti Doongari Road, Dharam Singh Circle, Jaipur - 302004. These Terms of Use of the website available at www.cardekho.com, mobile site and mobile applications (individually and collectively, “Website”) is between Girnar and the guest users or registered users of the Website (hereinafter referred to as "You" or "Your" or "Yourself" or "User") describe the terms on which Girnar offers You access to the Website for availing services and buy products, as are incidental and ancillary thereto ("Services", and more particularly defined hereinafter).
+        1) Acknowledgment:
+        Entire Agreement: These Terms of Use together with below listed documents/policies (without limitation) available either at Website or entered separately by Girnar with You, as applicable, and all other notices, rules, guidelines with respect to Your use of Website, constitutes the entire agreement (“Agreement”) between Girnar and You.
+        Privacy Policy
+        Additional Terms and Conditions
+        Terms of Sale
+        These additional documents/policies, wherever applicable, including terms imposed by mobile application stores like Apple’s iTunes, Android’s etc. are deemed to be incorporated under these Terms of Use by way of reference. 
+        You acknowledge and agree that Your usage (defined below) of the Website are strictly regulated and governed by the terms and conditions of this Agreement.
+        PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING OR REGISTERING ON THE WEBSITE OR LISTING ANY ITEM, ACCESSING ANY MATERIAL, INFORMATION OR SERVICES, POSTING ANY ADVERTISMENT/INFORMATION AT OR THROUGH THE WEBSITE. IF YOU DO NOT AGREE WITH THESE TERMS OF USE, PLEASE DO NOT USE THE WEBSITE.
+        Girnar use third-party service providers to assist Girnar in improving our Services and Website and to monitor our Users’ interests and activities. You hereby authorise Girnar and/or third party service providers engaged by Girnar to collect, use, store, analyse, reproduce, publish, and adapt (either on its own or through third party service provider) the information in relation to Your use of the Website for the purpose of data analysis and for improving Your experience on the Website. You acknowledge that this is solely undertaken by Girnar to improve Your experience in relation to the use of the Website and the provision of such Services shall be subject to such additional terms and conditions of Girnar and/or third party service providers.
+        Girnar shall not be responsible for any service availed by You from such third parties or any payment made by You to such third parties in connection with the services. Any concern or claims in relation to such services should be directed by You to such third parties. If you click on the links to third-party websites, you leave the Website. We are not responsible for the content of these third-party websites or for the security of Your personal information when You use the third-party websites.
+        2) Eligibility:
+        Service available through or use of the Website is available only to persons of majority (18 years of age or more) and who can legally component to form a contract under the Indian Contract Act, 1872 (as amended from time to time), or any other act or enactments to which the person is subject.
+        Persons who are incompetent, to make a legal and valid contract, for any reason whatsoever (minor, lunatic, insane, undischarged insolvent or otherwise) are not eligible to use Our Website and avail Our Services. BY ACCESSING OUR WEBSITE OR AVAILING ANY OF OUR SERVICES, YOU REPRESENT TO THE GIRNAR THAT YOU ARE MAJOR AND LEGALLY COMPETENT TO FORM A VALID CONTRACT UNDER THE TERMS OF USE.
+        Further to this, Girnar reserves its right, without assigning any reason, to restrict or limit Your access to the Website and can further terminate Your access to Website and deny the Services or any other product available through or at Our Website. This right of suspension / termination of Services of Girnar, is in addition to any other remedy available to Girnar, for access & usage of Website or availing any of Our Services through Website, which is in contravention of any of the terms and conditions of Terms of Use or this Agreement or any other applicable law.
+        3) Important:
+        This Website, including mobile application, is an online marketplace and an Intermediary in terms of Information Technology Act, 2000 (as amended from time to time), which provides a platform to users to avail the Services. Any information provided either through or at Website is only for information purpose and such information does not substitute any specific advice whether investment, legal, taxation or otherwise and are not intended to provide You with any nature of certification, guarantee or warranty. Girnar is not responsible and can not be held liable for any transaction between the Website’s User.
+        By accessing, browsing and using this Website or availing Services, You agree and acknowledge that, You understand this limited and restricted use and accessing, browsing or using this Website or availing any Services is out of your own free will, discretion and responsibility.
+        Girnar reserves its right to modify, suspend, cancel or discontinue any or all sections, or Services at any time without any notice. Girnar reserves the right to make modifications and alterations in the information contained on the Website without notice. You agree that Girnar shall not be liable to You or to any third party for any modification, suspension or discontinuance of the Website.
+        You expressly agree that any information provided on the Website shall be used by you at your risk. You are advised to hereby make proper enquiries and use the information provided on the Website.
+        From time to time Girnar may supplement its Terms of Use with additional terms pertaining to specific content and Your usage of mobile app may further require you to abide by the additional terms of third party e.g. Play Store etc. before download and installing the mobile app. These terms are collectively referred as (“Additional Terms”). Such Additional Terms are hereby incorporated by reference into these Terms of Use.
+        4) Services:
+        Girnar provides a platform to the Users of Website and acts as an Intermediary. All information and material available on the Website is only to assist the User of Website who are interested in the Services provided by Girnar and who wants to explore the more options before concluding their transactions. Among other services and information, Girnar may provide any or all the below listed services to the Users:
+        i. Website may provide the information on new cars or upcoming cars including without limitation price, specifications, dealer locations etc.
+        ii. Girnar will provide services to research cars, prices, technical specifications, other car attributes, and warranty and road side assistance.
+        iii. The services can include listing of your used cars, online or browsing through the list of used cars listed by Users of Girnar. Services can further include the facility to advertise / exhibit / make available for sell various products including without limitation auto products, accessories, services to other Users of the Website. Girnar makes no claims that the any such information / data as available is accurate or applicability of the information to any specific situation.
+        iv. Girnar may also provide the user the ability to send SMS to the user's top callers or send an email to the users friends letting them know about the service.
+        v. Website may provide certain Features, Content ("Features" and “Content” are defined below) that enable sending/receiving invites/solicitation messages/reminders to your contacts whose details, as required under the specific Features, are submitted and specifically permitted by you to be so used.
+        vi. Website may provide the facility to the Users for their engagement for buying and selling the various products under the Terms of Use. 
+        vii. Website may also provide information on additional products of third party e.g. banks, financial institutions, insurance company, dealers etc. pertaining to loan, insurance, and other services ancillary and incidental thereto.
+        All the above listed services are provided at the sole discretion of Girnar, and You acknowledges and agree that Girnar can add or provide additional services not listed above, or can remove / suspend / cancel any or all services/products, listed above without any notice or liability.
+        5) Features And Content:
+        “Contents" or "Content" shall mean any and all information, data, text, software, music, sound, photographs, graphics, video, messages, materials, news, notices, articles, contracts, forms, documents or other materials and information which may be viewed or downloaded on or through this Website. Contents shall also include any e-mail, messages, e-cards or any other information furnished by a user to be displayed on the Website by Girnar.
+        "Feature" or "Features": A "Feature" may include any interactive, value addition service or other additional feature including without limitation comparison, 360 degree view etc. which are introduced or available on the Website.
+        Girnar may allow the User of Website to upload or post certain content, data or information, message, files, photographs, pictures, articles, feedback or any other material of combination thereof (collectively referred to "User Content") accessible to others or transmit communications to others. Some of these tools may be operated by third parties, and Your use of them is subject to both the terms of this Agreement and to the policies of their third-party providers. This Feature is available to You as a matter of convenience only and to express Your views on products / services available through or at Website.
+        Being the originator of the User Content, You are solely responsible for the User Content that You upload, post, publish, transmit or otherwise make available on the Website. You represent that you have obtained all relevant consents and approvals in order to post any User Content. You further represent that all such User Content will be in accordance with applicable law. You acknowledges and agree that of the User Content posted or transmitted through our Website represents the views of the author, and not of Cardekho.com. You also acknowledge that your use of or reliance on such content is at your own risk.
+        You acknowledge that Girnar does not endorse any User Content on the Website and is not responsible or liable for any User Content. In case the User Content is in violates/infringes any patent, trademark, trade secret, copyright or any other proprietary or privacy rights of any third party or in contravention of any applicable law, then Girnar at its sole discretion may remove or disable the access to the User Content or any part thereof, without any notice to User.
+        Assignment of User Content: You hereby grant Girnar a perpetual, non-revocable, worldwide, royalty-free and sub-licensable right and license to use, copy, distribute, display, publish, transmit, make available, reproduce, modify, adapt the User Content and create derivate works of the User Content. You represent and warrant that You own or otherwise control all of the rights to the User Content that You post or that You otherwise provide on or through the Website; and that, as at the date that the User Content is posted or submitted on the Website: (i) the User Content is accurate; (ii) use of the User Content You supply does not breach these Terms of Use; and (iii) that such User Content is lawful.
+</p>
+</div>
+
+
+
+
+            
+
+            <div class="container-fluid bg-grey" style="height: 300px">
+                    <br>
+                    <br>
+                    
+                     <p>
+                    
+                                  <div class="row">
+                                <div class="col-sm-4">
+                                  
+                                <h6><b>Overview</b></h6>
+                                                        
+                                <a href="/aboutus" style="color: black">
+                                About Us
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                FAQs
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                Privacy Policy
+                              </a>
+                                <br>
+                                <a href="#" style="color: black">
+                                Terms And Conditions
+                              </a>
+                      </p>
+                    </div>
+                            
+                    <div class="col-sm-4">
+                            <h6><b>Used Cars By Places</b></h6>
+                            <a href="/usedcarsindelhi" style="color: black">
+                              Delhi
+                            </a>
+                            <br>
+                            <a href="/usedcarsinmumbai" style="color: black">
+                             Mumbai
+                              </a>
+                              <br>
+                              <a href="/usedcarsinbangalore" style="color: black">
+        Bangalore
+                                </a>
+                                <br>
+                                <a href="/usedcarsinhyderabad" style="color: black">
+        Hyderabad
+                                  </a>
+                                  <br>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6><b>Follow Us On</b></h6>
+                                <a href="#" style="color: black">
+                                    <p>
+                                        <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                          
+                                       
+                                </a>
+                                <a href="#" style="color: black">
+                                  
+                                        <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                          
+                                       
+                                </a>
+                                <a href="#" style="color: black">
+                                  
+                                    <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                </p>
+                                  
+                            </a>
+                                <br>
+                                
+                                </div>
+                          </div>
+                          <br>
+                          <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;<b> @2018copyright carfun</b>
+                 </div>
+                
+        </body>
+        </html>
+</body>
+</html>

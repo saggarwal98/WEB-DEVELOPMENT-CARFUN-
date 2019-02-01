@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 style="font-family:Comic Sans Ms;text-align:center;font-size:20pt;
+   color:#00FF00">Simple Login Page</h1>
+  
+   <form name="myForm" method="post" action="target.html">
+   Username<input type="text" name="userid" id="userid"/>
+   Password<input type="password" name="pswrd"/>
+   <input type="button" onclick="check(this.form)" value="Login"/>
+   <input type="reset" value="Reset"/>
+   </form>
+   <script language="javascript">
+   function check(form)
+   {
+  
+   if(form.userid.value && form.pswrd.value)
+    {
+  
+  alert("Welcome to BOOKSIS.COM");
+  var userid = document.getElementById("userid").value;
+  document.write("Welcome " + userid);
+  
+     }
+     else
+     {
+      alert("Error Password or Username");
+      }
+     }
+  
+     </script>
+     </body>
+</html>

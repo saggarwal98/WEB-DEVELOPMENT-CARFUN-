@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-widthx, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>BMW 5 Series</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       <style>
+           #carouselExampleIndicators{
+               height:500px;
+               width:1000px;
+               /* background-color: black; */
+           }
+           body{
+               margin-left:20px;
+           }
+           .cont1{
+            display:flex;
+                justify-content: space-evenly;
+                height:220px;
+           }
+           .cont4{
+            display:flex;
+                justify-content: space-evenly;
+                height:200px;
+           }
+           .cont2{
+            display:flex;
+                justify-content: space-evenly;
+                height:300px;
+           }
+           .cont{
+                display:flex;
+                justify-content: space-evenly;
+                height:270px; 
+           }
+           .item1{
+               height:200px;
+               width:600px;
+           }
+           .item2{
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item3{
+               margin-top:60px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item4{
+               margin-top:20px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item5{
+               margin-top:80px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+       </style> 
+       <link rel="stylesheet" href="style.css">
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+    </head>
+<body>
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+                         
+        
+                      </nav>
+                    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="bmw1.jpg" alt="First slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="bmw3.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="bmw6.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+        <br>
+
+
+
+        <center><p class="h1">BMW 5 SERIES</p></center>
+        <!-- <center><img src="Q43.png" height=50px></center> -->
+
+
+        <p style="margin-left:370px;margin-right:260px;">The all-new BMW 5 Series is the embodiment of the modern business sedan. Thanks to its dynamic and simultaneously elegant appearance, it convincingly meets the expectations that are placed today on a vehicle of its class: aesthetic athleticism and driving pleasure with state-of-the-art technology.</p>
+
+
+            
+        <b><font size=5>REVIEW<br></font></b><br>
+
+
+        <div class="cont1">
+                <div class="item1">
+                    <p><b>The 2018 BMW 5-Series expands the sedan's already-excellent lineup to include an efficient plug-in hybrid and an uber-quick V-8.</b></p><br>
+                    The 2018 BMW 5-Series is more than a mid-size luxury sedan.t's one of BMW's most advanced vehicles. It can park itself without a driver, take pictures of its own surroundings without a driver on hand, can start itself via a mobile app even when the driver's not present–if that's what the driver wants it to do.Regardless of model, the 5-Series takes an evolutionary approach to styling compared to its predecessor. The new 5-Series has a sharper nose and more tapered profile along the sides.It also sports some of BMW's most advanced engines and transmissions, whether augmented by battery power or hitched to M-worthy engineering.
+                </div>
+                <div class="item2">
+                    <img src="bmw7.jpg" style="width:450px">
+                </div>
+            </div><br><br><br><br><br>
+            <font size=4><center><u><b>Styling<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <b><p>The 2018 BMW 5-Series gets a technophile and a brute added to the lineup this year, but otherwise stays the same.</p></b>
+                            The 2018 BMW 5-Series adds two new models to the lineup this year at opposite ends of the performance spectrum.The new 530e iPerformance plug-in hybrid and M550i xDrive bookend the 530i and 540i models that were carried over from last year. The 5-Series is one year removed from a full makeover, although perhaps that phrase overstates the changes.The 5-Series borrows liberally from the larger 7-Series, but gets its own details. Creases along the doors under the windows and door handles are reserved for the 5-Series alone, and updated LED taillights and chromed exhaust ports finish the 5-Series off in its own way.Inside, the 5-Series is uniquely elegant; soft-touch surfaces and leather abound. Multiple materials help visually break upper, middle, and lower tiers of the dashboard that can be trimmed with brushed aluminium, wood or glossy black trim.     
+                        </div>
+                    <div class="item3">
+                        <img src="bmw2.jpg"  style="width:450px">
+                    </div>
+            </div><br><BR><br><br>
+            <font size=4><center><u><b>Performance<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <b><p>Every 5-Series has adequate power, but the new M550i xDrive should whet appetites for more to come soon.</p></b>
+                            5-Series is the addition of a V-8-powered M550i xDrive, a diesel-powered 540d, and a plug-in hybrid 530e to complement the turbo-4 and turbo-6 530i and 540i respectively.<br>
+                            The first stop for many buyers will be the turbo-4 found under the hood of the 530i. That corporate inline-4 makes 248 horsepower and 258 pound-feet of torque, and can power the rear wheels as standard or all four via the optional all-wheel drive, which is called xDrive. It propels the 5-Series up to 60 mph in about six seconds, which should be enough for most buyers. It’s only pressed to pull off rushed passing situations.5-Series gets temptingly closer to the vaunted M5 with the exhaustively named M550i xDrive. It mates a 4.4-liter turbocharged V-8 with all-wheel drive running gear to charge up to 60 mph in less than four seconds.
+                        </div>
+                    <div class="item3">
+                        <img src="bm3.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br><br>
+            <font size=4><center><u><b>Comfort & Quality<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <b><p>The 2018 BMW 5-Series is exceptionally quiet and comfortable, befitting its luxury price tag.</p></b>
+                            The 2018 BMW 5-Series is a mid-size luxury hauler with a full complement of luxury features. It nearly aces our comfort index with great front and rear seats, spacious interior capacity, and plentiful cargo storage.Base models will be fitted with BMW’s synthetic leather, called SensaTec, which is durable and a reasonable facsimile of the real thing, if not wholly satisfying. Opting for real hides adds $1,450 to the bottom line, and should be considered as an essential upgrade—leather is available in more shades including Night Blue, which we think is just the tops.<br>
+                            The power-adjustable front seats can be multi-contour affairs, which means we don’t have the math to tell you how many different positions the 20-way adjustable seats can be configured. Heated and cooled seats are optional, same goes for in-seat massagers.
+                        </div>
+                    <div class="item3">
+                        <img src="bmw5.jpg"  style="width:450px">
+                    </div>
+            </div><br>    <br><br>
+            <font size=4><center><u><b>Safety<br><br></b></u></center></font>
+            <div class="cont">
+                    <div class="item1">
+                            <b><p>The new 5-Series is a Top Safety Pick+ and federal testers should follow soon with their ratings.</p></b>                            </p></b>
+                            When equipped, the 2018 BMW 5-Series includes blind-spot monitors with rear cross-traffic alert, pedestrian detection, forward-collision warnings with automatic emergency braking, and lane departure warning. Additional packages can add adaptive cruise control, active lane control, a surround-view camera system, and side collision warning. Those additional systems can drive the BMW for more than 30 seconds without driver input, before warning the driver to resume control of the car.Beyond those advanced systems, the 5-Series comes equipped with a standard set of front and rear airbags, including seat-mounted side curtains, seatbelt pretensioners, and a telematics service that will notify first responders if the car has been in a severe crash.
+                        </div>
+                    <div class="item4">
+                        <img src="bmw8.jpg"  style="width:450px">
+                    </div>
+            </div><br><br><br><br>
+            <font size=4><center><u><b>Features<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <b><p>The 2018 BMW 5-Series steps closer to a future for cars that was hard to imagine just five years ago.</p></b>
+                            The 2018 BMW 5-Series places a heavy emphasis on technology with a raft of convenience features that can transform the luxury sedan into a “device for devices.”<br>
+                            In base 530i configuration, the BMW comes standard with 17-inch wheels, a moonroof, power-adjustable front seats, dual-zone climate control, 8.8-inch digital instrument cluster display, LED headlights, synthetic leather upholstery, Bluetooth connectivity, and a 10.2-inch touchscreen for infotainment.Aside from some package shuffling and a standard rearview camera, the 5-Series is largely the same car it was last year.The latest version of BMW’s infotainment system, iDrive, incorporates wireless CarPlay, which is hugely useful. 
+                        </div>
+                    <div class="item4">
+                        <img src="bmw4.jpg"  style="width:450px">
+                    </div>
+            </div><br><br>  
+            <font size=4><center><u><b>Fuel Economy<br><br></b></u></center></font>
+            <div class="cont4">
+                    <div class="item1">
+                            <b><p>The 2018 BMW 530e iPerformance is all of the performance with better fuel-economy than the rest. </p></b>
+                            For 2018, BMW added a plug-in hybrid 530e iPerformance to the 5-Series range that dramatically improves its fuel-efficiency and potential.All 5-Series sedans use a slick-shifting 8-speed automatic and turbocharging to extract every ounce of energy from its gas tank.The 2018 BMW 530e iPerformance is rated up to 29 mpg combined, or 72 mpge, which factors a full battery and gas for combined travel. The all-electric range is somewhere around 16 miles, depending on driving conditions. The 9.2-kwh battery can be recharged in under three hours with the 7.2-kw onboard charger.Opting for the turbo-6 in 540i models does not significantly penalize mileage. The EPA rates rear-drive 540i models at 21/30/24 mpg and all-wheel-drive versions at 20/29/23 mpg.
+                    </div>
+                    <div class="item4">
+                        <img src="bmw9.jpg"  style="width:400px;margin-left:30px">
+                    </div>
+            </div>  
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container-fluid bg-grey" style="height: 300px">
+            <br>
+            <br>
+            
+             <p>
+            
+                          <div class="row">
+                        <div class="col-sm-4">
+                          
+                        <h6><b>Overview</b></h6>
+                                                
+                        <a href="/aboutus" style="color: black">
+                        About Us
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        FAQs
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Privacy Policy
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Terms And Conditions
+                      </a>
+              </p>
+            </div>
+                    
+            <div class="col-sm-4">
+                    <h6><b>Used Cars By Places</b></h6>
+                    <a href="/usedcarsindelhi" style="color: black">
+                      Delhi
+                    </a>
+                    <br>
+                    <a href="/usedcarsinmumbai" style="color: black">
+                     Mumbai
+                      </a>
+                      <br>
+                      <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                        </a>
+                        <br>
+                        <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                          </a>
+                          <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6><b>Follow Us On</b></h6>
+                        <a href="#" style="color: black">
+                            <p>
+                                <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                                <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                            <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                        </p>
+                          
+                    </a>
+                        <br>
+                        
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;<b> @2018copyright carfun</b>
+         </div>
+        
+</body>
+</html>
+</body>

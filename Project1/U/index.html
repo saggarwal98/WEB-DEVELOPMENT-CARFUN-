@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-widthx, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Maruti Suzuki Swift ZDi AGS Long Term Review Report 3</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="style.css">
+       <style>
+           #carouselExampleIndicators{
+               height:500px;
+               width:1000px;
+               /* background-color: black; */
+           }
+           body{
+               margin-left:20px;
+           }
+           .cont1{
+            display:flex;
+                justify-content: space-evenly;
+                height:220px;
+           }
+           .cont4{
+            display:flex;
+                justify-content: space-evenly;
+                height:200px;
+           }
+           .cont2{
+            display:flex;
+                justify-content: space-evenly;
+                height:300px;
+           }
+           .cont{
+                display:flex;
+                justify-content: space-evenly;
+                height:270px; 
+           }
+           .item1{
+               height:200px;
+               width:600px;
+           }
+           .item2{
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item3{
+               margin-top:60px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item4{
+               margin-top:20px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item5{
+               margin-top:80px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .im{
+               display:flex;
+               flex-direction: column;
+               margin-top:20px;
+           }
+       </style> 
+    </head>
+<body>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+        
+        
+                      </nav>
+                    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="swift.jpg" alt="First slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="swift6.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+        <br>
+
+
+
+        <center><p class="h1">Maruti Suzuki Swift ZDi AGS Long Term Review Report 3</p></center>
+        <!-- <center><img src="Q43.png" height=50px></center> -->
+
+
+        <!-- <p style="margin-left:370px;margin-right:260px;">If style is what defines you. If everything that’s bold excites you.If brilliance is what you seek. And if, glamour is your thrill.Then, get ready to allure the town with the glamorous new look and bold design of the Vitara Brezza.</p> -->
+
+
+            <br><br>
+        <b><font size=5>INTRODUCTION<br></font></b><br>
+
+
+        <div class="cont1">
+                <div class="item1">
+                    <!-- <p><b>The 2018 BMW M5 is equal parts performance monster and luxury cruiser.</b></p><br> -->
+                <p>We continue our journey with the fourth generation Maruti Suzuki Swift in our long term garage and this time around, we have a highway report. I finally managed to take a break from my busy schedule and headed for my hometown in South Maharashtra for a short vacation.</p><p>What´s more, shortly after I returned, the Swift took off on another long journey. This time, it was my colleague Pratheek from BikeWale  who took the car on a trip to Chikmagalur, in Karnataka and back. He did this 1700km roundtrip to participate in Dakar Ace CS Santosh’s Great Trail Adventure (head over to BikeWale to read all about his experience). So you can see that it has been quite an eventful month for our little diesel hatchback and here is everything that we found out.</p>
+                </div>
+                <div class="item2">
+                    <img src="swift1.jpg" style="width:500px">
+                </div>
+            </div><br><br><br><br><br>
+            <font size=4><u><b>Born to be econonmical<br><br></b></u></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The 2018 BMW M5 balances a handsome exterior with sporty and elegant interior.</p></b> -->
+                            <p>The all-important question of ‘kitna deti hai highway pe’ has been answered and it looks quite impressive. In real world conditions and with two different drivers and varied road conditions, the Swift with its five-speed automated manual transmission was able to give us an efficiency of 20.4kmpl. What’s more even after knocking off 498kms, we still had a quarter of a tank and a possible range of up to 116km giving us a total of 614km.</p>
+                            <p>Now, the car has a 37-litre tank and an ARAI F.E figure of 28.4kmpl which would put the total theoretical range at 1050km, a mighty impressive figure but a bit hard to achieve. We feel that our 614km figure is equally impressive when you consider that this is in real world conditions. However, given that this is a diesel variant, we wouldn’t recommend that you push your luck with regard to how far you can go in terms of distance and you should tank up if your DTE readout drops to under 50km.</p>
+                        </div>
+                    <div class="item2">
+                        <img src="swift2.jpg"  style="width:500px">
+                    </div>
+            </div><br><BR><br><br>
+            <font size=4><u><b>Highway tales<br><br></b></u></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The multi-talented 2018 BMW M5 is lightning quick and track-ready when performance calls, but comfortable when it’s time to cruise.</p></b> -->
+                            <p>On both journeys, the car clocked over 1000km. There were no issues with regard to seating as all the occupants were very comfortable. The well contoured seats provided enough support all around while the pliant ride meant, the car took most of rutted rural roads without losing its composure too much.</p>
+                            <p>Added to this mix was the fact that my family had recently brought in a four-legged member to the troupe. Ray really enjoyed his first big car journey and this has lead me to believe that he definitely gives a paws-up! To the Swift as a highway companion. </p>
+                            <p>Out on the smoother blacktop, we were able to cruise in the entry-level three-digit range comfortably and as you have read earlier, it achieved the astronomical 20.4kmpl number. The car felt even more composed and planted once we had packed the 268-litre boot. While the capacity is not all that much, it is wide and will swallow up the weekend luggage of a family of four without losing a step. </p>
+                            <p>We did face a few hiccups on the way though. The music system wasn’t up to the snuff and this the second time we’ve highlighted this issue. Despite being priced at Rs 9 lakhs (On-road Delhi), this ZDi Swift does not come with a touchscreen system and that makes even pairing a phone via Bluetooth lengthier than needed.</p>
+                            <p>Another grouse I had was the visibility around the corners. The thick pillars, while giving the car a distinct look, impede my view around the corners. I felt this the most while navigating the single lane ghat roads that dominate the route to my hometown in southern Maharashtra. The AMT is a bit slow to respond when climbing slopes and many a times, I had to switch to manual mode with a downshift to negotiate the climbs.</p>
+                        </div>
+                    <div class="im">
+                        <div class="item4">
+                        <img src="swift4.jpg"  style="width:500px">
+                    </div><br><br><br><br>
+                    <div class="item4">
+                        <img src="swift5.jpg"  style="width:500px">
+                    </div>
+                </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <font size=4><u><b>Daily Driving debrief<br><br></b></u></font>
+            <div class="cont4">
+                    <div class="item1">
+                            <!-- <b><p>With the room of the standard 5-Series and the sporty touches and additional quality of the M lineup, the 2018 BMW M5’s cabin is one fine place to spend some time.</p></b> -->
+                            <p>There’s significantly more space in the cabin, excellent ergonomics, great front seats and a rather pleasant driving environment. We’ve got the AGS – the automated manual transmission – and the great thing about it is convenience with efficiency. Our motorsport editor had the Swift for a month and reported 19-20kmpl in the city and 21-22kmpl on the highway. No wonder I’ve yet to tank her up.</p>
+                            <p>The AMT is definitely a lot smoother and changes are quicker than what we have seen on Maruti's first AGS. The drivetrain feels almost exactly like it does on the new Dzire though and again I feel Maruti should have done more to give the Swift its own character.</p>
+                        </div>
+                    <div class="item2">
+                        <img src="swift3.jpg"  style="width:450px">
+                    </div>
+             </div><br>     
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-grey" style="height: 300px">
+            <br>
+            <br>
+            
+             <p>
+            
+                          <div class="row">
+                        <div class="col-sm-4">
+                          
+                        <h6><b>Overview</b></h6>
+                                                
+                        <a href="/aboutus" style="color: black">
+                        About Us
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        FAQs
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Privacy Policy
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Terms And Conditions
+                      </a>
+              </p>
+            </div>
+                    
+            <div class="col-sm-4">
+                    <h6><b>Used Cars By Places</b></h6>
+                    <a href="/usedcarsindelhi" style="color: black">
+                      Delhi
+                    </a>
+                    <br>
+                    <a href="/usedcarsinmumbai" style="color: black">
+                     Mumbai
+                      </a>
+                      <br>
+                      <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                        </a>
+                        <br>
+                        <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                          </a>
+                          <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6><b>Follow Us On</b></h6>
+                        <a href="#" style="color: black">
+                            <p>
+                                <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                                <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                            <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                        </p>
+                          
+                    </a>
+                        <br>
+                        
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;<b> @2018copyright carfun</b>
+         </div>
+        
+</body>
+</html>

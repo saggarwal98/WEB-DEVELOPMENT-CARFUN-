@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <style>
+                .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 0px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    width:100px;
+                }
+                
+  
+                
+                #myInput {
+                    border-box: box-sizing;
+                    background-image: url('searchicon.png');
+                    background-position: 14px 12px;
+                    background-repeat: no-repeat;
+                    font-size: 16px;
+                    padding: 14px 20px 12px 45px;
+                    border: none;
+                    border-bottom: 1px solid #ddd;
+                }
+                
+                #myInput:focus {outline: 3px solid #ddd;}
+                #myInput{
+                width:430px;
+                }
+                
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                   
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f6f6f6;
+                    
+                    overflow: auto;
+                    border: 1px solid #ddd;
+                    z-index: 1;
+                    margin-left: 200px
+                }
+                
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+                
+           
+                
+                .show {display: block;}
+
+                .c:hover{
+background-color: gray;
+
+
+                }
+                .d{
+                        width: 420px;
+    height: 400px;
+                        overflow: scroll; 
+                }
+
+
+                </style>
+
+                
+<script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                function filterFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+                
+
+    <title>CARFUN</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+                    <a href="/">
+                <img src="logo.png" height="50px" width="50px" style="border-radius: 50%;">
+                      </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <div class="dropdown"></div>
+                                <button onmouseover="myFunction()" class="dropbtn btn btn-success">Search</button>
+                                <div id="myDropdown" class="dropdown-content d" >
+                                                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                                <a href="/usedcarsindelhi" class="c">Used Cars In Delhi</a>
+                                                <a href="/usedcarsinmumbai" class="c">Used Cars In Mumbai</a>
+                                                <a href="/usedcarsinbangalore" class="c">Used Cars In Bangalore</a>
+                                                <a href="/usedcarsinhyderabad" class="c">Used Cars In Hyderabad</a>
+                                                <a href="/brands/bmw/bmwx1/" class="c">BMWX1</a>
+                                                <a href="/brands/bmw/" class="c">BMW</a>
+                                                <a href="/brands/ford/" class="c">Ford</a>
+                                                <a href="/reviews" class="c">Reviews</a>
+
+
+
+
+                                                <a href="/brands/toyota/" class="c">Toyota</a>
+                                                <a href="/brands/honda/" class="c">Honda</a>
+                                                <a href="/brands/3/" class="c">Hyundai</a>
+                                                <a href="/brands/2/" class="c">Maruti Suzuki</a>
+                                                <a href="/brands/bmw/BMW5Series/" class="c">BMW 5Series</a>
+                                                <a href="/brands/bmw/Toyota_Land_Cruiser/" class="c">Land Cruiser</a>
+                                                <a href="/brands/ford/Ford_Ecosport/" class="c">Ecosport</a>
+                                                <a href="/honda_amaze/" class="c">Amaze</a>
+                                                <a href="/brands/bmw/BMW3Series/" class="c">BMW 3Series</a>
+                                                <a href="/brands/bmw/BMWi8/" class="c">BMW i8</a>
+                                                <a href="/brands/bmw/BMW7Series/" class="c">BMW 7Series</a>
+                                                <a href="/brands/bmw/BMWX3/" class="c">BMW X3</a>
+                                                <a href="/brands/bmw/BMWX5/" class="c">BMW X5</a>
+                                                <a href="/brands/bmw/BMW3SeriesGT/" class="c">BMW 3Series GT</a>
+                                                <a href="/brands/ford/Ford_Ecosport/" class="c">Ford Ecosport</a>
+
+                                                
+
+
+                                        </div>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+                         
+        
+                      </nav>
+                    </div>
+                    
+
+
+
+
+                  <div class="banner1"></div>
+                <br>
+                <br>
+
+
+        <div class="container-fluid">
+
+            <h1 class="electric_cars">Electric Cars Personified</h1>
+            <div class="s9">
+                <br>
+
+                <p class="s10" style="margin-left: 10px">As we become more environmentally conscious, eco-friendly vehicles have emerged as an attractive alternative to regular fuel vehicles. These not only let users enjoy high fuel efficiency but also allow them to leave a smaller carbon footprint. Global electric vehicle sales figures for Quarter 1 2016 highlight that plug-in sales in 2016 totaled to 180,500 units till date. This is approximately an increase of 42% as compared to the same period of time in 2015.</p>
+                
+        
+
+        <div class="grid-12 margin-top10">
+            <div class="infographic-right">
+                <h2 class="electric_cars">Advantages Of Electric Vehicles</h2>
+                <ul>
+                    <li>
+                        <div class="infographic-sprite carbon margin-right10">
+
+                        </div>
+                        <div class="margin-top10">
+                            <h3>Reducing carbon Footprint</h3>
+                            <div>
+                                    The environmental impact of an electric car is zero which means you're reducing your carbon footprint
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                            <div class="infographic-sprite cost margin-right10">
+    
+                            </div>
+                            <div class="margin-top10">
+                                <h3>Cost Saving</h3>
+                                <div>
+                                        Being green, efficient and clean does not mean that the 'mileage' of Evs is compromised.
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                        <li>
+                                <div class="infographic-sprite sound margin-right10">
+        
+                                </div>
+                                <div class="margin-top10">
+                                    <h3>Clean Environment</h3>
+                                    <div>
+                                            Electric cars put curb on noise pollution. Electric vehicles do not have a tail pipe, they give off no emissions.
+                                    </div>
+                                </div>
+                            </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <div class="grid-12 margin-top10"><div class="infographic-left"><h2 class="electric_cars">Increase in no. of EVs sold over the period of 5-10 years (Global) </h2><div class="text-center"><img class="lazy" src="https://imgd.aeplcdn.com/0x0/cw/es/e2o/graph-new.png" data-original="https://imgd.aeplcdn.com/0x0/cw/es/e2o/graph-new.png" alt="graph" border="0" style="display: inline;"></div></div></div>
+    </div>  
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+        <h1 class="electric_cars">Featured Articles</h1>
+    <div class="s12">
+    
+    <h3 class="electric_cars">Indian Government finally embarks on electrification push</h3>
+    <br>
+    <p>  <img src="image55.jpg" height="200px" width="300px" align="right" style="margin-right: 10px">
+       <p style="margin-left: 10px"> The electric future is a global phenomenon and it is realising faster than ever. Major carmakers around the world are gearing up towards the new powertrain for sustenance before the exhaustion of fossil fuels. While the developed countries are adapting faster and applying various regulations to ensure their streets are emission free in coming years, the Indian Government so far has been discerningly quiet on the electrification push. But now, it seems that the trends are shifting.
+            As per the latest announcement by the NITI Aayog, the government plans to initiate the electrification push with a completely different kind of approach unlike the developed countries. Instead of relying on heavy subsidies for the electric vehicles, the plan is to sell the car without battery (thus bringing down the cost by up to 70 per cent since it constitutes the major cost of an EV) and lease out the battery pack separately. The scheme, which should kick off by 2020, would initially involve public transport and then slowly move towards private passenger cars. The battery can be leased at the stations and replenished for another when one pack is consumed. The government would control the industry for a couple of years initially until it stabilises.
+
+            This unique plan is still in the early stages of drafting and will be penned down soon. The government intends to replace all the vehicles on Indian roads with no-emission electric vehicles by the year 2030. The taxis, two-wheelers, three-wheelers and non-air-conditioned city buses would have specific filling stations with quick replacement and charging facilities for city commute. The specifications, rules, plans, infrastructure and other minute details of the plans are being worked out. A formal policy is expected to roll out in about six months.
+            
+            Pioneers of the Indian EV industry, Mahindra Electric are at the forefront with new investments in EV technology and ever expanding EV portfolio. Other Indian car makers are expected to join the movement sooner than later helping the much-needed transition to electric mobility.
+        </p>
+        </p>
+    </div>
+</div>
+<br>
+<br>
+
+
+
+<div class="container-fluid bg-grey" style="height: 300px">
+    <br>
+    <br>
+    
+     <p>
+    
+                  <div class="row">
+                <div class="col-sm-4">
+                  
+                <h6><b>Overview</b></h6>
+                                        
+                <a href="/aboutus" style="color: black">
+                About Us
+              </a>
+                <br>
+                <a href="/FAQs" style="color: black">
+                FAQs
+              </a>
+                <br>
+                <a href="/privacy_policy" style="color: black">
+                Privacy Policy
+              </a>
+                <br>
+                <a href="/terms_conditions" style="color: black">
+                Terms And Conditions
+              </a>
+      </p>
+    </div>
+            
+    <div class="col-sm-4">
+            <h6><b>Used Cars By Places</b></h6>
+            <a href="/usedcarsindelhi" style="color: black">
+              Delhi
+            </a>
+            <br>
+            <a href="/usedcarsinmumbai" style="color: black">
+             Mumbai
+              </a>
+              <br>
+              <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                </a>
+                <br>
+                <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                  </a>
+                  <br>
+            </div>
+            <div class="col-sm-4">
+                <h6><b>Follow Us On</b></h6>
+                <a href="#" style="color: black">
+                    <p>
+                        <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                          
+                       
+                </a>
+                <a href="#" style="color: black">
+                  
+                        <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                          
+                       
+                </a>
+                <a href="#" style="color: black">
+                  
+                    <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                </p>
+                  
+            </a>
+                <br>
+                
+                </div>
+          </div>
+          <br>
+          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;<b> @2018copyright carfun</b>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-widthx, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Mahindra New Rexton</title><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="style.css">
+       <style>
+           #carouselExampleIndicators{
+               height:500px;
+               width:1000px;
+               /* background-color: black; */
+           }
+           body{
+               margin-left:20px;
+           }
+           .cont1{
+            display:flex;
+                justify-content: space-evenly;
+                height:220px;
+           }
+           .cont4{
+            display:flex;
+                justify-content: space-evenly;
+                height:200px;
+           }
+           .cont2{
+            display:flex;
+                justify-content: space-evenly;
+                height:300px;
+           }
+           .cont{
+                display:flex;
+                justify-content: space-evenly;
+                height:270px; 
+           }
+           .item1{
+               height:200px;
+               width:600px;
+           }
+           .item2{
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item3{
+               margin-top:60px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item4{
+               margin-top:20px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+           .item5{
+               margin-top:80px;
+               margin-left: 20px;
+               height:200px;
+               width:600px;
+           }
+       </style> 
+    </head>
+<body>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+        
+        
+                      </nav>
+                    </div>
+                    
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                  
+        
+                        <a class="navbar-brand" href="#">Logo</a>
+                      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              New Cars
+                            </a>
+                            <div class="dropdown-menu s7">
+                              
+                              <a class="dropdown-item " href="/upcomingcars">Upcoming Cars</a>
+                              <a class="dropdown-item " href="/newlaunches">New Launches</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                  Reviews
+                                </a>
+                                <div class="dropdown-menu s7">
+                                  <a class="dropdown-item" href="/reviews"> Customer Reviews</a>
+                                  <a class="dropdown-item" href="/videos">Videos</a>
+                                  <a class="dropdown-item" href="/tipsandadvice">Tips And Advice</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Specials
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/cartyres">Car Tyres</a>
+                                      <a class="dropdown-item" href="/electricvehicles">Electric Vehicles</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                
+        
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Brand
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                      <a class="dropdown-item" href="/2">Maruti Suzuki</a>
+                                      <a class="dropdown-item" href="/3">Hyundai</a>
+                                      <a class="dropdown-item" href="/brands/honda">Honda</a>
+                                      <a class="dropdown-item" href="/brands/toyota">Toyota</a>
+                                      <a class="dropdown-item" href="/brands/ford">Ford</a>
+                                      <a class="dropdown-item" href="/brands/bmw">BMW</a>
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+        
+        
+        
+                                  <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Used Cars
+                                    </a>
+                                    <div class="dropdown-menu s7">
+                                                                          
+                                        <a class="dropdown-item sell_used_cars sell_cars" href="/add_products.html">Sell Used Cars</a>
+                                     
+                                      <a class="dropdown-item sell_cars" href="/usedcarsindelhi">Used Cars in Delhi</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinmumbai">Used Cars in Mumbai</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinbangalore">Used Cars in Bangalore</a>
+                                      <a class="dropdown-item sell_cars" href="/usedcarsinhyderabad">Used Cars in Hyderabad</a>
+                                  
+
+                                      
+                                    </div>
+                                    
+                                  </li>
+        
+                                 
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        
+        
+                                
+                                  
+        
+                                  
+        
+        
+                                  
+                                  
+                        </ul> 
+        
+        
+                        
+                        
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form class="form-inline" action="/login">
+                           
+                            <button class="btn btn-success search" type="submit">Login</button>
+                          </form>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <form class="form-inline" action="/signup">
+                           
+                            <button class="btn btn-success search" type="submit">Signup</button>
+                          </form>
+        
+        
+                      </nav>
+                    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="rexton7.jpg" alt="First slide" style="width:1000px;height:500px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="rexton9.jpg" alt="Third slide" style="width:1000px;height:500px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+        <br>
+
+
+
+        <center><p class="h1">MAHINDRA REXTON</p></center>
+        <!-- <center><img src="Q43.png" height=50px></center> -->
+
+
+        <p style="margin-left:370px;margin-right:260px;"></p>
+
+
+            
+        <b><font size=5>REVIEW<br></font></b><br>
+
+
+        <div class="cont1">
+                <div class="item1">
+                    <!-- <p><b>The 2018 BMW M5 is equal parts performance monster and luxury cruiser.</b></p><br> -->
+                    The new Rexton is a very big deal for SsangYong, and indeed Mahindra. The first Rexton is the one that truly put SsangYong on the global map, and the next car simply had to be stronger, better and overall very impressive. And the new car simply has to fire – as Mahindra and SsangYong have a lot riding on its success. It is being called the G4 Rexton in Korea – alluding to the fact that SsangYong likes to see this almost as a fourth generation – given that the first gen went through 3 iterations. The car in fact sports a prominent G4 badge as its main logo on the rear door, while the front grille and wheels also have an updated SsangYong logo. (In Korea most of the range still uses the old ‘double dragon’ logo from the co’s past.) But I am still going to call this the second gen.
+                </div>
+                <div class="item2">
+                    <img src="rexton8.jpg" style="width:450px">
+                </div>
+            </div><br><br><br><br>
+            <font size=4><center><u><b>Styling<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The 2018 BMW M5 balances a handsome exterior with sporty and elegant interior.</p></b> -->
+                            The designers have gone for a sleeker, modern and contemporary look, and yet it is masculine and butch too. There are some very obvious carryovers from the Tivoli in the car’s face and the flanks. The bulge along the rear fender that comes into the rear door, will most definitely tell you the two cars are related. What is also great about the car’s looks, is that unlike past SsangYongs which had this quirky, Korean feel to their design, this one is very international, and the car immediately gives off a better finish and build quality too. The shut lines and paint job on the Y400 instantly impress. And for me that was heartening since this new car is a departure from the old and ageing fleet that was SsangYong a few years ago.
+                        </div>
+                    <div class="item2">
+                        <img src="rexton1.jpg"  style="width:450px">
+                    </div>
+            </div><br> 
+            <font size=4><center><u><b>Performance<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>The multi-talented 2018 BMW M5 is lightning quick and track-ready when performance calls, but comfortable when it’s time to cruise.</p></b> -->
+                            There is also a 2-litre petrol on offer which makes 222 bhp, but that is not in focus from the Indian context, and hence I’ve chosen to spend time with the diesel Rexton. The unit makes 183 bhp and puts out 420 Nm of peak torque. That torque kicks in as low as 1600 rpm and carries through to 2600 rpm. This affords you better driveability and allows the Mercedes-Benz sourced 7-speed auto transmission to be efficient and responsive. Even within minutes of getting behind the wheel of this car – the difference is like chalk and cheese. The first generation Rexton had managed to get reasonably refined, but still carried a lot of the clunky feel ascribed to previous generation SUVs. What’s really nice is to see is that everything that was lacking on that car seems to have been methodically addressed whilst developing the new generation.      
+                        </div>
+                    <div class="item2">
+                        <img src="rexton4.jpg"  style="width:450px">
+                    </div>
+            </div><br>
+            <font size=4><center><u><b>Comfort & Quality<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>With the room of the standard 5-Series and the sporty touches and additional quality of the M lineup, the 2018 BMW M5’s cabin is one fine place to spend some time.</p></b> -->
+                            Three row seats concealed with premium, dual tone, beige and black interiors, complemented by metal grain accents and plush leather upholstery enhances the luxurious feeling.
+                            Spoil yourself with the ultra convenient 8-way seat adjustment at your fingertips. The automatic easy access function retracts the driver seat to a default position to help in easy entry and exit.
+                            The memory function stores your preferences in the memory. Just as it retains your settings of the outside rear view mirror.
+                            The state-of-the-art Infotainment touchscreen supports all widely used audio and video formats so you can sit back and enjoy the show. The navigation system comes preloaded with maps.
+                            Customised comfort for all occupants with fully automatic climate control. The 2nd and 3rd row AC vents make it easy for occupants to adjust the airflow direction and intensity ensuring the journey is a breeze.
+                            Speed sensitive and feather light power steering helps you command perfect control at different speeds and driving conditions.
+                        </div>
+                    <div class="item4">
+                        <img src="rexton2.jpg"  style="width:450px">
+                    </div>
+            </div><br>    <br><br>
+            <font size=4><center><u><b>Safety<br><br></b></u></center></font>
+            <div class="cont">
+                    <div class="item1">
+                            <!-- <b><p>The M5 has no crash-test scores, but a sturdy structure and a healthy set of safety features should make one of the safer cars with 600 horsepower.</p></b> -->
+                            Frontal and side airbags will instantly inflate to ensure your safety when required.
+                            Hill Descent Control (HDC)-When the downward gradient reaches 10% or more, the HDC assumes braking duties and maintains slow and steady vehicular movement so the driver can focus solely on steering.
+                            The ESP monitors road conditions and vehicle status constantly, adjusting engine output and braking whenever the driver is about to lose control. The ESP integrates the anti-lock brake system, active rollover protection and anti-slip regulation to improve the car's intervention capabilities.
+                            Active rollover protection mitigates body roll with the help of sensors to always keep you grounded.
+                            Maximum protection is provided by Rexton's rigid construction and reinforced steel panels. Built like a fortress to protect you and your loved ones, should the unthinkable ever occur.
+                        </div>
+                    <div class="item2">
+                        <img src="rexton.jpg"  style="width:450px">
+                    </div>
+            </div><br><br>
+            <font size=4><center><u><b>Features<br><br></b></u></center></font>
+            <div class="cont2">
+                    <div class="item1">
+                            <!-- <b><p>BMW loads the M5 with luxury and performance features and makes more of both available.</p></b> -->
+                            The Rexton has the 4Tronic four-wheel drive system – another carryover from the Rexton W, but completely recalibrated. For the most part it allows the driving duties to be carried out by the rear wheels, and will send power to the front only when it encounters low-grip or slippery conditions. But it will spend most of its life on tarmac anyway given how most buyers don not really go off road. Having said that it has a dial that lets you switch to 4 wheel drive low, 2-wheel high and 4 wheel high, if you do find yourself in adverse conditions like snow for instance.
+                            The gearbox does have a tiptronic function and so you can use that to manually shift up or down. Unlike most tiptronics, which see you needing to use the entire gear lever, here it’s a small toggle switch on the side of the gearstick that lets you shift gears – and while it would take some getting used to, it is pretty cool!
+                        </div>
+                    <div class="item4">
+                        <img src="rexton10.jpg"  style="width:450px">
+                    </div>
+            </div>  <br>
+            <font size=4><center><u><b>Fuel Economy<br><br></b></u></center></font>
+            <div class="cont4">
+                    <div class="item1">
+                            <!-- <b><p>Who worries about fuel economy with 600 horsepower under the hood?</p></b> -->
+                            The refinement of the engine of this mean machine is something that you will definitely love. Rexton can easily be one of the smoothest performers on the road and it almost gives a feel of driving an inline, six-cylinder mill. Long gear-shifts allow the SUV to pull at higher revs.However, the downshift is a bit less responsive, making city-driving in this model requiring expert driving skills. The bulky SUV takes 10.63 seconds to reach 100 kilometres per hour from rest when driven by the all-wheel system.
+                            The 1968 cc Diesel - powered variant delivers a fuel economy of 15 kmpl in city and 17 kmpl on highways.
+                        </div>
+                    <div class="item2">
+                        <img src="tata7.jpg"  style="width:400px;margin-left:30px">
+                    </div>
+            </div>  
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-grey" style="height: 300px">
+            <br>
+            <br>
+            
+             <p>
+            
+                          <div class="row">
+                        <div class="col-sm-4">
+                          
+                        <h6><b>Overview</b></h6>
+                                                
+                        <a href="/aboutus" style="color: black">
+                        About Us
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        FAQs
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Privacy Policy
+                      </a>
+                        <br>
+                        <a href="#" style="color: black">
+                        Terms And Conditions
+                      </a>
+              </p>
+            </div>
+                    
+            <div class="col-sm-4">
+                    <h6><b>Used Cars By Places</b></h6>
+                    <a href="/usedcarsindelhi" style="color: black">
+                      Delhi
+                    </a>
+                    <br>
+                    <a href="/usedcarsinmumbai" style="color: black">
+                     Mumbai
+                      </a>
+                      <br>
+                      <a href="/usedcarsinbangalore" style="color: black">
+Bangalore
+                        </a>
+                        <br>
+                        <a href="/usedcarsinhyderabad" style="color: black">
+Hyderabad
+                          </a>
+                          <br>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6><b>Follow Us On</b></h6>
+                        <a href="#" style="color: black">
+                            <p>
+                                <img src="download.png" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                                <img src="download1.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                                  
+                               
+                        </a>
+                        <a href="#" style="color: black">
+                          
+                            <img src="download3.jpg" height="30px" width="30px" class="rounded-circle">&nbsp;&nbsp;
+                        </p>
+                          
+                    </a>
+                        <br>
+                        
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;<b> @2018copyright carfun</b>
+         </div>
+        
+</body>
+</html>
+</body>
